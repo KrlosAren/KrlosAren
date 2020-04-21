@@ -3,21 +3,21 @@
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 1200 758" style="enable-background:new 0 0 1200 758;" xml:space="preserve">
 <style type="text/css">
-	.st0{display:none;}
-	.st1{display:inline;fill:#D29434;}
-	.st2{fill:#FBBEBE;}
-	.st3{fill:#D0CDE1;}
-	.st4{opacity:0.1;enable-background:new    ;}
-	.st5{fill:#A0616A;}
-	.st6{fill:#3F3D56;}
-	.st7{fill:#2F2E41;}
-	.st8{display:inline;fill:#3F3D56;}
+	.st0{fill:#D29434;}
+	.st1{display:none;}
+	.st2{display:inline;fill:#FBBEBE;}
+	.st3{display:inline;fill:#D0CDE1;}
+	.st4{display:inline;opacity:0.1;enable-background:new    ;}
+	.st5{display:inline;fill:#A0616A;}
+	.st6{display:inline;fill:#3F3D56;}
+	.st7{display:inline;fill:#2F2E41;}
+	.st8{fill:#3F3D56;}
 </style>
-<g id="Layer_3" class="st0">
-	<path class="st1" d="M1200,0v758h-93.2c-89.6-39.1-183.9-66.6-280.5-81.8C651.4,648.4,486.7,662,351,688.9
+<g id="Layer_3">
+	<path class="st0" d="M1200,0v758h-93.2c-89.6-39.1-183.9-66.6-280.5-81.8C651.4,648.4,486.7,662,351,688.9
 		c-83,16.4-164.5,39.6-243.7,69.1H0V0H1200z"/>
 </g>
-<g id="f486ee6e-de1e-45cd-adbe-5aa880982aa3">
+<g id="f486ee6e-de1e-45cd-adbe-5aa880982aa3" class="st1">
 	<title>explore</title>
 	<polygon class="st2" points="964.5,705.9 968.6,722.3 950.5,727.2 948.9,710 	"/>
 	<polygon class="st2" points="898.7,726.4 898.7,742 880.6,745.3 877.3,737.1 883.9,723.1 	"/>
@@ -84,7 +84,7 @@
 	<path class="st6" d="M1114.5,361.7l-1.9-0.6c0.1-0.4,11.9-40.7-7.4-66.6c-10.9-14.6-29.6-22.1-55.6-22.1v-2
 		c26.7,0,45.9,7.7,57.2,22.9C1126.7,320,1114.6,361.2,1114.5,361.7z"/>
 </g>
-<g id="Layer_2" class="st0">
+<g id="Layer_2">
 	<path class="st8" d="M109.4,495.2l-26.3-21.6l21.6-26.3l26.3,21.6L109.4,495.2z M85.9,473.3l23.2,19l19-23.2l-23.2-19L85.9,473.3z"
 		/>
 	<path class="st8" d="M189.9,308.1c-6.6,0-12-5.4-12-12s5.4-12,12-12s12,5.4,12,12C201.9,302.8,196.5,308.1,189.9,308.1z

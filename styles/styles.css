@@ -1,6 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
 }
 .principal{
     background: linear-gradient( #f6d365 0%, #fda085 100%);
@@ -17,7 +18,20 @@
     margin-top: 20px;
 }
 .principal__text{
-    font-family: 'Manrope', sans-serif;
     font-size: 35px;
     color: white;
+}
+.principal__content{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: white;
+}
+.link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: black;
 }

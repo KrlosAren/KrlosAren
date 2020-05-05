@@ -36,22 +36,19 @@
 }
 .container{
     width: 100%;
-    height: 100vh - inherit;
-    display: grid;
-    grid-template-rows: 3fr;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    height: inherit;
+    display: flex;
     background-image: linear-gradient( #27496d 20%, #00909e 100%);
 }
 .container__contenido{
-    
-    
+    width: 50%;
+    height: auto;    
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
 }
 .container__contenido img{
-    width: 100%;
-    height: auto;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    
+    width: 100%;   
 }
 .footer{
     width: 100%;

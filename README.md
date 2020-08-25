@@ -1,4 +1,5 @@
-# Personal Website
+# Carlos Lopez Z. 
+**Frontend Developer and Designer**
 
 
 ## Hello! :smiley:

@@ -1,0 +1,29 @@
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet")
+    title Carlos L. Zavarce
+  body
+    div.content__nav
+      nav.nav
+        .nav__home
+          a(href="/") Home
+        .nav__sections
+          a(href="/project") Projects
+          a(href="/contact") Contact
+    .content__header
+      header.header
+        .header__avatar
+          img(src=require('../src/assets/Avatar_Carlos.svg').default, alt="avatar_carlos")
+        .header__content
+          h1
+            | Carlos Lopez Zavarce 
+          h2
+            | ✋🏻 Hola, soy Carlos desarrollador Full-Stack y diseñador.  
+            | Me gusta descubrir cada día algo nuevo, aprender de otros y compartir lo que se.  
+            | La playa y la montaña son parte de mí. Salir a correr y salir con amigos. 
+      main.hero
+        .hero__illustrarion
+          img(src="../src/assets/hero_ilustration.svg", alt="hero_illustration")
+        .hero__content

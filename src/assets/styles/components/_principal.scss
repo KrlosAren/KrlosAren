@@ -1,0 +1,215 @@
+main {
+  height: auto;
+  width: 100vw;
+}
+
+.content {
+  @include mixin-content;
+
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2em;
+  position: relative;
+}
+
+.content__text {
+  border-bottom: 3px solid black;
+  width: 60%;
+
+  h1 {
+    font-size: $font-32 * 4;
+  }
+
+  p {
+    float: right;
+    font-size: $font-20;
+    font-weight: $font-600;
+    margin-top: 0.5em;
+  }
+}
+
+.content__arrow {
+  align-items: flex-end;
+  bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 250px);
+  justify-content: center;
+  left: 0;
+  padding: 4em;
+  position: absolute;
+  width: 100%;
+
+  h3 {
+    font-size: $font-16;
+    font-weight: $font-600;
+    padding: 0.2em;
+  }
+
+  img {
+    height: 50px;
+    transform: rotate(90deg);
+    width: 50px;
+  }
+}
+
+// ------------- prologe -------------
+
+.prologe {
+  @include mixin-content;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 250px 250px 250px;
+  height: auto;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  // line-height: 1.2em;
+  margin-top: 2em;
+
+  &__text {
+    align-items: center;
+    display: flex;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    height: 100%;
+
+    h2 {
+      border-bottom: 3px solid black;
+      font-size: $font-20 * 4;
+      width: 80%;
+    }
+  }
+
+  &__paragraph--what {
+    @include mixin-paragraph;
+    @include mixin-center-content;
+
+    align-items: flex-start;
+    flex-direction: column;
+    grid-column: 2/-1;
+    grid-row: 2/3;
+    width: 80%;
+
+    h3 {
+      font-size: $font-20;
+      font-weight: $font-600;
+    }
+
+    p {
+      margin: 1em 0;
+    }
+  }
+
+  &__paragraph--continue {
+    @include mixin-center-content;
+
+    grid-column: 1/2;
+    grid-row: 3/4;
+    width: 80%;
+  }
+
+  &__paragraph--last {
+    @include mixin-center-content;
+
+    grid-column: 2/-1;
+    grid-row: 4/-1;
+    width: 80%;
+  }
+}
+
+// ------------- me -------------
+
+.me {
+  @include mixin-content;
+
+  align-items: center;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+
+  &__img {
+    @include mixin-center-content;
+
+    img {
+      height: 300px;
+      width: 300px;
+    }
+  }
+
+  &__description {
+    @include mixin-center-content;
+
+    flex-direction: column;
+
+    h2 {
+      border-bottom: 3px solid black;
+      font-size: $font-32 * 2;
+      margin: 0.5em 0;
+      text-align: center;
+      width: 60%;
+    }
+
+    ul {
+      line-height: 1.8em;
+      list-style: none;
+      text-align: center;
+
+      li {
+        font-size: $font-16 + 2;
+        font-weight: $font-300;
+      }
+    }
+
+    a {
+      border: 2px solid teal;
+      border-bottom: 5px solid teal;
+      border-radius: 10px;
+      color: teal;
+      margin-top: 3em;
+      padding: 1.2em 2em;
+      text-decoration: none;
+      transition: 0.7s;
+
+      &:active {
+        transform: scale(0.8);
+      }
+    }
+  }
+}
+
+// ------------- footer -------------
+
+// .footer {
+//   @include mixin-content;
+
+//   background-color: rgb(201, 201, 201);
+//   height: auto;
+//   margin-top: 3em;
+//   width: 100%;
+
+//   &__rrss {
+//     @include mixin-center-content;
+//     @include mixin-content;
+
+//     height: 80px;
+//     justify-content: space-around;
+//     width: 50%;
+
+//     img {
+//       height: 30px;
+//       width: 30px;
+//     }
+//   }
+
+//   &__message {
+//     @include mixin-center-content;
+
+//     margin-top: 1em;
+//   }
+// }

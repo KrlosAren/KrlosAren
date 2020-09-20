@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const StylelintPlugin = require('stylelint-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -11,14 +12,17 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: './js/[name].[hash].js',
   },
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   devServer: {
-    port: 4500,
+    port: 3000,
     open: true,
   },
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -44,11 +48,10 @@ module.exports = {
         ],
       },
       {
-        test: /\.styl$/,
+        test: /\.(s*)css$/,
         use: [
           {
             loader: 'style-loader',
-            // loader: MiniCssExtractPlugin.loader,
           },
           {
             loader: 'css-loader',
@@ -59,17 +62,10 @@ module.exports = {
             },
           },
           {
-            loader: 'resolve-url-loader',
+            loader: 'sass-loader',
             options: {
               sourceMap: true,
-              importLoaders: 1,
-            },
-          },
-          {
-            loader: 'stylus-loader',
-            options: {
-              sourceMap: true,
-              importLoaders: 1,
+              implementation: require('sass'),
             },
           },
         ],
@@ -80,7 +76,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: './src/assets/[name].[ext]',
+              name: './src/assets/[name].[hash].[ext]',
             },
           },
         ],
@@ -94,10 +90,15 @@ module.exports = {
       inject: true,
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].css',
+      filename: '[name].[hash].css',
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ['**/app.*', '**/commons.*'],
+    }),
+    new StylelintPlugin({
+      configFile: '.stylelintrc.json',
+      files: '**/*.s?(a|c)ss',
+      fix: true,
     }),
   ],
 };

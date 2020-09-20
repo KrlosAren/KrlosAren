@@ -1,32 +1,19 @@
-# Personal Web and Portfolio
+# Carlos Lopez Z. 
+**Frontend Developer and Designer**
 
-:memo:
 
-  **The purpose of this challenge is: continues with my learn about HTML and CSS**
-  
-## Preview :art:
+## Hello! :smiley:
 
-You can see the live result here → [Article Preview Component](https://github.com/KrlosAren/four-card-feature-section-master)
+:hand: This is my portfolio. 
+I will use this space to show you my personal projects.
+:computer: I'm **Frot-End developer** , but i still learn about tecnologies and i want to become in the best developer.
 
-<details>
-    <summary>🖥 Desktop version</summary>
+Right now i use **HTML**, **CSS** and **JavaScript** combine with libraries and frameworks to construct a lot a projects.
+:raised_hand::raised_hand::raised_hand: But i like try another tools and lenguajes, i open to used another tools that represent a challenge. 
 
-![](./src/assets/design/desktop-design.jpg)
-</details>
+### Like to see you here and review my website an feedback me!.
 
-<details>
-    <summary>📱 Mobile version</summary>
+:facepunch: I like your comments because help to improve me and challange my to be better and better everyday!.
 
-  ![](./src/assets/design/desktop-design.jpg)
-</details>
+**See you soon!.**
 
-  
-
-## :pill: Technologies
-1. HTML
-2. PUG
-3. CSS
-4. Stylus
-5. JavaScript
-6. Webpack
-7. Travis

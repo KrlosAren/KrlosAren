@@ -58,15 +58,22 @@ module.exports = {
             },
           },
           {
-            test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
-            use: [
-              {
-                loader: 'file-loader',
-                options: {
-                  name: './src/assets/[name].[hash].[ext]',
-                },
-              },
-            ],
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true,
+              implementation: require('sass'),
+            },
+          },
+        ],
+      },
+      {
+        test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: './src/assets/[name].[hash].[ext]',
+            },
           },
         ],
       },

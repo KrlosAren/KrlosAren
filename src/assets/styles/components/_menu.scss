@@ -4,8 +4,12 @@
   height: 100vh;
   justify-content: center;
   position: fixed;
-  transform: translateX(-100vw);
   width: 100vw;
+  z-index: 900;
+}
+
+.hidden {
+  transform: translateX(-100vw);
 }
 
 .nav {

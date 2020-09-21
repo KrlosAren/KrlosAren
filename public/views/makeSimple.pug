@@ -1,0 +1,26 @@
+extends ../components/_header.pug
+block content
+  .container__nav
+    include ../views/menu.pug
+    include ../components/_menu.pug
+  main.main
+    h3 Make Simple
+    .main__projects
+      a(href="/")
+        .project
+          .project__modal
+              h4 Proyecto-1
+          img(src="https://dummyimage.com/600x400/c2c2c2/fff", alt="dummy")
+        .project
+          .project__modal
+              h4 Proyecto-1
+          img(src="https://dummyimage.com/600x400/c2c2c2/fff", alt="dummy")
+        .project
+          .project__modal
+              h4 Proyecto-1
+          img(src="https://dummyimage.com/600x400/c2c2c2/fff", alt="dummy")
+        .project
+          .project__modal
+              h4 Proyecto-1
+          img(src="https://dummyimage.com/600x400/c2c2c2/fff", alt="dummy")
+  include ../components/_footer.pug

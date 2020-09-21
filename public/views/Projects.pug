@@ -1,9 +1,8 @@
 extends ../components/_header.pug
 block content
-  .container
-    header.header
-      nav.nav
-        h4 Menu
+  .container__nav
+    include ../views/menu.pug
+    include ../components/_menu.pug
   main.main
     h3 Proyectos
     .main__projects

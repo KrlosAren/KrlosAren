@@ -1,0 +1,85 @@
+.nav__container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  position: fixed;
+  transform: translateX(-100vw);
+  width: 100vw;
+}
+
+.nav {
+  background-color: rgba($color: #008080, $alpha: 0.5);
+  height: 90vh;
+  padding: 4em;
+  width: 95%;
+
+  &__header {
+    @include mixin-center-content;
+
+    height: 5em;
+    justify-content: flex-start;
+    width: 100%;
+
+    img {
+      height: 90px;
+      width: 90px;
+    }
+
+    span {
+      color: white;
+      font-size: $font-20;
+      margin: 0 0.5em;
+    }
+
+    &--close {
+      color: white;
+      font-size: $font-32;
+      text-decoration: none;
+    }
+  }
+
+  &__rrss {
+    @include mixin-center-content;
+
+    justify-content: flex-start;
+    margin: 1em auto;
+    width: 100%;
+
+    &--line {
+      @include mixin-center-content;
+
+      justify-content: flex-start;
+      width: 100%;
+
+      &::before {
+        content: '--------------------------';
+      }
+    }
+
+    img {
+      height: 25px;
+      margin: 0 1em;
+      width: 25px;
+    }
+  }
+
+  &__links {
+    @include mixin-center-content;
+
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-around;
+
+    a {
+      color: teal;
+      font-size: $font-32;
+      margin: 0.3em 0;
+      text-decoration: none;
+
+      &:hover {
+        color: wheat;
+      }
+    }
+  }
+}

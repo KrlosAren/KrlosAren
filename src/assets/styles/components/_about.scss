@@ -1,0 +1,24 @@
+.main {
+  @include mixin-content;
+
+  height: auto;
+  margin: 0 auto;
+
+  h3 {
+    border-bottom: 3px solid black;
+    font-size: $font-20 * 3;
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+  }
+
+  &__text {
+    margin: 3em auto;
+    text-align: left;
+    width: 60%;
+
+    p {
+      line-height: 1.8em;
+    }
+  }
+}

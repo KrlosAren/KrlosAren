@@ -1,0 +1,21 @@
+.container {
+  height: 9em;
+  width: 100%;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.nav {
+  margin: 0 auto;
+  width: 80%;
+
+  h4 {
+    display: block;
+    float: right;
+  }
+}

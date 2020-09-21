@@ -3,6 +3,23 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
+const fs = require('fs');
+
+function generateHtmlPlugins(templateDir) {
+  const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+  return templateFiles.map((item) => {
+    // Split names and extension
+    const parts = item.split('.');
+    const name = parts[0];
+    const extension = parts[1];
+    return new HtmlWebpackPlugin({
+      filename: `${name}.html`,
+      template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
+    });
+  });
+}
+
+const htmlPlugins = generateHtmlPlugins('./public/views');
 
 module.exports = {
   entry: {
@@ -18,6 +35,7 @@ module.exports = {
   devServer: {
     port: 3000,
     open: true,
+    writeToDisk: true,
   },
   module: {
     rules: [
@@ -100,5 +118,5 @@ module.exports = {
       files: '**/*.s?(a|c)ss',
       fix: true,
     }),
-  ],
+  ].concat(htmlPlugins),
 };

@@ -1,7 +1,8 @@
 div(class="nav__container hiddenMenu" id="menu__hidden")
   .nav
     .nav__header
-      img(src=require("../../src/assets/Avatar_Carlos.svg").default, alt="avatar") 
+      a(href="/index.html")
+        img(src=require("../../src/assets/Avatar_Carlos.svg").default, alt="avatar") 
     .nav__rrss
       .nav__rrss--line
         a(href="https://github.com/KrlosAren")
@@ -15,7 +16,15 @@ div(class="nav__container hiddenMenu" id="menu__hidden")
         a(href="mailto:krlosaren@gmail.com")
           img(src="https://img.icons8.com/material-rounded/96/000000/important-mail.png")
     .nav__links
-      a(href="/index.html") Home
-      a(href="/Projects.html") Projects
-      a(href="/About.html") About
-      a(href="/makeSimple.html") Make Simple
+      .nav__links--item
+        a(href="/index.html") Home
+        span Regreso al Home Page
+      .nav__links--item
+        a(href="/Projects.html") Projects
+        span Algunos proyectos
+      .nav__links--item
+        a(href="/About.html") Yo
+        span Acerca de mi
+      .nav__links--item
+        a(href="/makeSimple.html") Make Simple
+        span Para aprender

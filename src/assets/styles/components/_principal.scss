@@ -6,19 +6,32 @@ main {
 .content {
   @include mixin-content;
 
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2em;
+  margin-top: 3em;
   position: relative;
 }
 
+.handHello {
+  margin: 0 0.2em;
+}
+
 .content__text {
+  @include mixin-center-content;
+
   border-bottom: 3px solid black;
+  justify-content: flex-start;
   width: 60%;
 
   h1 {
+    align-items: center;
+    display: flex;
     font-size: $font-32 * 4;
+  }
+
+  h2 {
+    font-size: $font-32 * 2;
   }
 
   p {
@@ -34,7 +47,7 @@ main {
   bottom: 2em;
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 250px);
+  height: 10vh;
   justify-content: center;
   left: 0;
   padding: 4em;
@@ -42,15 +55,14 @@ main {
   width: 100%;
 
   h3 {
-    font-size: $font-16;
-    font-weight: $font-600;
-    padding: 0.2em;
+    font-size: $font-32;
+    margin-bottom: 0.5em;
   }
 
   img {
-    height: 50px;
+    height: 40px;
     transform: rotate(90deg);
-    width: 50px;
+    width: 40px;
   }
 }
 

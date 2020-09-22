@@ -13,7 +13,7 @@
 }
 
 .nav {
-  background-color: rgba($color: #008080, $alpha: 0.5);
+  background-color: rgba($color: #f25467, $alpha: 1);
   height: 90vh;
   padding: 4em;
   width: 95%;
@@ -73,16 +73,38 @@
 
     align-items: flex-start;
     flex-direction: column;
+    height: auto;
     justify-content: space-around;
+    width: 100%;
 
-    a {
-      color: teal;
-      font-size: $font-32;
-      margin: 0.3em 0;
-      text-decoration: none;
+    &--item {
+      @include mixin-center-content;
 
-      &:hover {
-        color: wheat;
+      align-items: baseline;
+      height: 100%;
+      justify-content: flex-start;
+      width: 100%;
+
+      a {
+        color: #e9c46a;
+        font-family: $font-robotoslab;
+        font-size: $font-32 + 6;
+        margin: 0.3em 0;
+        text-decoration: none;
+        width: 30%;
+
+        &:hover {
+          color: white;
+        }
+      }
+
+      span {
+        color: #e9c46a;
+        font-family: $font-nunito;
+        font-size: $font-16;
+        font-weight: $font-300;
+        height: 100%;
+        vertical-align: bottom;
       }
     }
   }

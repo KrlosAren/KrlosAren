@@ -5,14 +5,14 @@ block content
   div#main__container
     div(class="content")
       .content__text
-        h1 Hola!
-      .content__arrow
-        h3 scroll
-        img(src=require("../src/assets/icons/arrow.svg").default, alt="")
+        h2(class="sayHello handHello") ✋🏻
+        h1  Hola!
+      div(class="content__arrow")
+        h3(class="pulse") 👇🏻
     .prologe
       .prologe__text
         h2 Sigues Aqui!
-      .prologe__paragraph--what
+      div(class="prologe__paragraph--what text__animation")
         h3 Que hacemos?
         p
           |Algun dia me dijeron aprende a escribir.
@@ -25,7 +25,7 @@ block content
           |Este espacio se trata de eso, compartir lo que pienso,
           |compartir lo que se, aprender de ti, 
           |y porque no compartir una buena conversacion.
-      .prologe__paragraph--last
+      div(class="prologe__paragraph--last text__animation")
         p
           |Quedate aqui e intercambiemos conocimiento,
           |podras conseguir de todo un poco, me gusta la tecnologia,
@@ -35,17 +35,17 @@ block content
       .me__img
         img(src=require("../src/assets/Avatar_Carlos.svg").default, alt="")
       .me__description
-        h2 Soy, Carlos
+        h2 Soy, Carlos 😁
         ul
-          li Soy desarrollador front-end y disenador.
-          li Estudie arquitectura.
+          li Soy desarrollador front-end y disenador 💻.
+          li 🏗 Estudie arquitectura .
           li Vivo en <del>Venezuela, Costa Rica,</del> Chile. 
           li Me gusta viajar, comer y leer.
           li Diariamente me cuestion el porque de la vida.
-          li Soy cinturon negro en karate-do, pero soy pacifista. <del>(Miyagi fue mi sensei).</del>
-          li <b>La playa y la montana son mis lugares favoritos.</b>
-          li Salir a caminar  me ayuda a solucionar problemas(cocinar Tambien).
-          li Aprender cosas es parte de mi filosofia de vida.
+          li Soy cinturon negro en karate-do 🥋, pero soy pacifista. <del>(Miyagi fue mi sensei).</del>
+          li <b>La playa 🏖 y la montana 🌄 son mis lugares favoritos.</b>
+          li Salir a caminar 🏃🏻‍♂️  me ayuda a solucionar problemas(cocinar Tambien 🥪).
+          li Aprender cosas es parte de mi filosofia de vida 👓.
           li Cuanto tengo tiempo libre, busco en que ocuparlo(Sindrome de Estocolmo).
         a(href="/About.html") Mas Historias
     include ./components/_footer.pug

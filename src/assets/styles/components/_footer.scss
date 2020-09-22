@@ -4,33 +4,10 @@
   @include mixin-center-content;
 
   margin-top: 2em;
+
+  p {
+    a {
+      text-decoration: none;
+    }
+  }
 }
-
-// .footer {
-//   @include mixin-content;
-
-//   background-color: rgb(201, 201, 201);
-//   height: auto;
-//   margin-top: 3em;
-//   width: 100%;
-
-//   &__rrss {
-//     @include mixin-center-content;
-//     @include mixin-content;
-
-//     height: 80px;
-//     justify-content: space-around;
-//     width: 50%;
-
-//     img {
-//       height: 30px;
-//       width: 30px;
-//     }
-//   }
-
-//   &__message {
-//     @include mixin-center-content;
-
-//     margin-top: 1em;
-//   }
-// }

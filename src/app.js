@@ -1,13 +1,8 @@
+import menu from './js/components/menu';
+import changeHand from './js/components/indicators';
+
 import './assets/styles/main.scss';
 
-const buttonMenu = document.getElementById('buttonMenu');
-const menuContainer = document.getElementById('menu__hidden');
-const mainContainer = document.getElementById('main__container');
-
-buttonMenu.addEventListener('click', () => {
-  menuContainer.classList.toggle('hiddenMenu');
-  mainContainer.classList.toggle('hidden');
-});
-
-console.log(buttonMenu);
+window.addEventListener('load', menu);
+window.addEventListener('scroll', changeHand);
 

@@ -2,12 +2,19 @@ extends ./components/_header.pug
 block content
   include ./views/menu.pug
   include ./components/_menu.pug
+  div(class='content__canvas' id='content__canvas')
   div#main__container
     div(class="content")
       .content__text
-        h2(class="sayHello handHello") ✋🏻
-        h1  Hola!
-      div(class="content__arrow")
+        h2(class="sayHello handHello ") ✋🏻
+        span(class="textHello") H
+        span(class="textHello") o
+        span(class="textHello") l
+        span(class="textHello") a
+        span(class="textHello") !
+      div.dontClick
+        p.dontClick__text 👊🏻
+      div(class="content__arrow" id='arrow')
         h3(class="pulse") 👇🏻
     .prologe
       .prologe__text
@@ -18,7 +25,7 @@ block content
           |Algun dia me dijeron aprende a escribir.
           |Pregunte para que, y nadie supo responder, 
           |y creo que he encontrado la razon.
-      .prologe__paragraph--continue
+      div(class="prologe__paragraph--continue text__animation")
         p
           |Escribir es libre,  inventar historias tambien,
           |y compartirlas es de tu eleccion. 
@@ -37,15 +44,17 @@ block content
       .me__description
         h2 Soy, Carlos 😁
         ul
-          li Soy desarrollador front-end y disenador 💻.
-          li 🏗 Estudie arquitectura .
+          li Soy desarrollador Front-end y Diseñador 💻.
+          li 🏢 Estudié arquitectura.
           li Vivo en <del>Venezuela, Costa Rica,</del> Chile. 
-          li Me gusta viajar, comer y leer.
-          li Diariamente me cuestion el porque de la vida.
+          li Me gusta viajar 🚀, comer 🍕 y leer 📚.
+          li Diariamente me cuestiono el porqué de la vida.
           li Soy cinturon negro en karate-do 🥋, pero soy pacifista. <del>(Miyagi fue mi sensei).</del>
-          li <b>La playa 🏖 y la montana 🌄 son mis lugares favoritos.</b>
-          li Salir a caminar 🏃🏻‍♂️  me ayuda a solucionar problemas(cocinar Tambien 🥪).
+          li <b>La playa 🌴🥥 y la montaña 🌄 son mis lugares favoritos.</b>
+          li Salir a caminar 🏃🏻‍♂️  me ayuda a solucionar problemas(cocinar también 🥪).
           li Aprender cosas es parte de mi filosofia de vida 👓.
-          li Cuanto tengo tiempo libre, busco en que ocuparlo(Sindrome de Estocolmo).
-        a(href="/About.html") Mas Historias
+          li Cuanto tengo tiempo libre, busco en que ocuparlo<del>(Sindrome de Estocolmo).</del>
+      span(class="me__buttons" id="buttons")
+        a(href="/About.html") Quién es Carlos
+        a(href="/Projects.html") Proyectos
     include ./components/_footer.pug

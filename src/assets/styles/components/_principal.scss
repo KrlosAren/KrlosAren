@@ -24,9 +24,10 @@ main {
   justify-content: flex-start;
   width: 60%;
 
-  h1 {
+  span {
     align-items: center;
     display: flex;
+    font-family: $font-robotoslab;
     font-size: $font-32 * 4;
   }
 
@@ -39,6 +40,30 @@ main {
     font-size: $font-20;
     font-weight: $font-600;
     margin-top: 0.5em;
+  }
+}
+
+.dontClick {
+  @include mixin-center-content;
+
+  background-color: rgba(0, 128, 128, 0.589);
+  justify-content: flex-start;
+  margin-top: 0.3em;
+  text-align: right;
+  text-transform: uppercase;
+  width: 60%;
+
+  &__text {
+    color: transparent;
+    margin-right: 20px;
+    padding: 0.2em;
+    width: 100%;
+
+    &:hover {
+      color: unset;
+      cursor: pointer;
+      transition: 0.2s;
+    }
   }
 }
 
@@ -55,8 +80,16 @@ main {
   width: 100%;
 
   h3 {
+    display: flex;
+    flex-direction: column;
     font-size: $font-32;
     margin-bottom: 0.5em;
+    position: fixed;
+
+    &::before {
+      content: 'Baja';
+      font-size: $font-16;
+    }
   }
 
   img {
@@ -90,6 +123,7 @@ main {
 
     h2 {
       border-bottom: 3px solid black;
+      font-family: $font-robotoslab;
       font-size: $font-20 * 4;
       width: 80%;
     }
@@ -148,9 +182,11 @@ main {
   &__img {
     @include mixin-center-content;
 
+    height: auto;
+
     img {
-      height: 300px;
-      width: 300px;
+      height: 200px;
+      width: 200px;
     }
   }
 
@@ -161,6 +197,7 @@ main {
 
     h2 {
       border-bottom: 3px solid black;
+      font-family: $font-robotoslab;
       font-size: $font-32 * 2;
       margin: 0.5em 0;
       text-align: center;
@@ -177,13 +214,20 @@ main {
         font-weight: $font-300;
       }
     }
+  }
+
+  &__buttons {
+    @include mixin-center-content;
+
+    margin: 0 auto;
+    width: 80%;
 
     a {
       border: 2px solid teal;
       border-bottom: 5px solid teal;
       border-radius: 10px;
       color: teal;
-      margin-top: 3em;
+      margin: 3em;
       padding: 1.2em 2em;
       text-decoration: none;
       transition: 0.7s;

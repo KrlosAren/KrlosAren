@@ -1,3 +1,42 @@
-.content__text:nth-child(2) {
-  background-color: red;
+.content__text span:nth-of-type(1) {
+  animation-duration: 0.5;
+}
+
+.content__text span:nth-of-type(2) {
+  animation-name: pulse;
+}
+
+.content__text span:nth-of-type(3) {
+  animation-name: pulse;
+}
+
+.content__text span:nth-of-type(4) {
+  animation-name: rotation;
+}
+
+.content__text span:nth-of-type(5) {
+  animation-name: bunce;
+}
+
+.hinge {
+  animation-direction: alternate-reverse;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-name: hinge;
+}
+
+@keyframes hinge {
+  0% {
+    transform: rotateZ(90deg);
+  }
+
+  10% {
+    transform: rotate(20deg, 30deg, 180deg) rotateX(5px);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotateX(5deg);
+  }
 }

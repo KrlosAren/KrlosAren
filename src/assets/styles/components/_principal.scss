@@ -9,7 +9,7 @@ main {
   margin-bottom: 3em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 3em;
+  margin-top: 10em;
   position: relative;
 }
 
@@ -72,11 +72,10 @@ main {
   bottom: 2em;
   display: flex;
   flex-direction: column;
-  height: 10vh;
+  height: 80vh;
   justify-content: center;
   left: 0;
   padding: 4em;
-  position: absolute;
   width: 100%;
 
   h3 {

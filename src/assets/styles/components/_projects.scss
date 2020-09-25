@@ -1,6 +1,8 @@
 .main__projects {
   @include mixin-center-content;
 
+  flex-direction: column;
+  height: auto;
   margin: 2em auto;
   width: 100%;
 }

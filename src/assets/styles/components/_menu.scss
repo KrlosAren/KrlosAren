@@ -3,9 +3,8 @@
   display: flex;
   height: 100vh;
   justify-content: center;
-  position: fixed;
-  width: 100vw;
-  z-index: 900;
+  width: 100%;
+  z-index: 100;
 }
 
 .hiddenMenu {
@@ -13,17 +12,23 @@
 }
 
 .nav {
-  background-color: rgba($color: #f25467, $alpha: 1);
-  height: 90vh;
-  padding: 6em  4em;
+  background-color: rgba($color: #92dce5, $alpha: 1);
+  height: 90%;
+  padding: 7em 5em;
   width: 95%;
 
   &__header {
     @include mixin-center-content;
 
     height: 5em;
-    justify-content: flex-start;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 7em;
+    position: fixed;
+    // position: absolute;
+    top: 4em;
     width: 100%;
+    z-index: 1000;
 
     img {
       height: 90px;
@@ -31,9 +36,21 @@
     }
 
     span {
-      color: white;
+      color: #056676;
       font-size: $font-20;
       margin: 0 0.5em;
+    }
+
+    p {
+      border: 1px solid transparent;
+      border-radius: 0.5em;
+      color: #16213e;
+      padding: 0.5em 2em;
+
+      &:hover {
+        border: 1px dashed #16213e;
+        cursor: pointer;
+      }
     }
 
     &--close {
@@ -47,7 +64,6 @@
     @include mixin-center-content;
 
     justify-content: flex-start;
-    margin: 1em auto;
     width: 100%;
 
     &--line {
@@ -57,7 +73,10 @@
       width: 100%;
 
       &::before {
-        content: '--------------------------';
+        background-color: #16213e;
+        content: '';
+        height: 0.3em;
+        width: 10%;
       }
     }
 
@@ -86,7 +105,7 @@
       width: 100%;
 
       a {
-        color: #e9c46a;
+        color: #16213e;
         font-family: $font-robotoslab;
         font-size: $font-32 + 6;
         margin: 0.3em 0;
@@ -94,12 +113,12 @@
         width: 30%;
 
         &:hover {
-          color: white;
+          color: #f4f6ff;
         }
       }
 
       span {
-        color: #e9c46a;
+        color: #16213e;
         font-family: $font-nunito;
         font-size: $font-16;
         font-weight: $font-300;

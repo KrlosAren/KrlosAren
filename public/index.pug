@@ -1,9 +1,11 @@
 extends ./components/_header.pug
 block content
-  include ./views/menu.pug
-  include ./components/_menu.pug
-  div(class='content__canvas' id='content__canvas')
+  div(class="container__nav")
+    include ./components/_nav.pug
+    include ./views/menu.pug
   div#main__container
+    div(class="content__arrow" id='arrow')
+      h3(class="pulse") 👇🏻
     div(class="content")
       .content__text
         h2(class="sayHello handHello") ✋🏻
@@ -14,8 +16,6 @@ block content
         span(class="textHello") !
       div.dontClick
         p(class="dontClick__text" id="buttonPunch") 👊🏻
-      div(class="content__arrow" id='arrow')
-        h3(class="pulse") 👇🏻
     .prologe
       .prologe__text
         h2 Sigues Aqui!
@@ -52,9 +52,9 @@ block content
           li Soy cinturon negro en karate-do 🥋, pero soy pacifista. <del>(Miyagi fue mi sensei).</del>
           li <b>La playa 🌴🥥 y la montaña 🌄 son mis lugares favoritos.</b>
           li Salir a caminar 🏃🏻‍♂️  me ayuda a solucionar problemas(cocinar también 🥪).
-          li Aprender cosas es parte de mi filosofia de vida 👓.
-          li Cuanto tengo tiempo libre, busco en que ocuparlo<del>(Sindrome de Estocolmo).</del>
-      span(class="me__buttons" id="buttons")
-        a(href="/About.html") Quién es Carlos
-        a(href="/Projects.html") Proyectos
+          li Aprender cosas es parte de mi filosofía de vida 👓.
+          li Cuanto tengo tiempo libre, busco en que ocuparlo<del>(Síndrome de Estocolmo).</del>
+      div(class="me__buttons" id="buttons")
+        a(href="/About.html" class="button-primary button btnActive") Quién es Carlos
+        a(href="/Projects.html" class="button button-primary btnActive") Proyectos
     include ./components/_footer.pug

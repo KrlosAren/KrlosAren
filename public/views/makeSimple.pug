@@ -2,17 +2,16 @@ extends ../components/_header.pug
 include ../components/_mixin.pug
 block content
   - var articles = 5;
-  .container__nav
+  div(class="container__nav")
+    include ../components/_nav.pug
     include ../views/menu.pug
-    include ../components/_menu.pug
   div#main__container
     main.main
-      h3 Make Simple
+      h3 Make It Simple
       .main__blog
         +blog_card
         +blog_card
         +blog_card
         +blog_card
         +blog_card
-
-  include ../components/_footer.pug
+    include ../components/_footer.pug

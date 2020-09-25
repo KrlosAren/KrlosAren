@@ -1,6 +1,7 @@
 @import './components/variables';
 @import './components/breakpoint';
 @import './components/global';
+@import './components/utils';
 @import './components/header';
 @import './components/nav';
 @import './components/footer';
@@ -11,3 +12,5 @@
 @import './components/animations';
 @import './components/lettersAnimations';
 @import './components/blogCard';
+@import './components/mobileMenu';
+@import './components/mobile';

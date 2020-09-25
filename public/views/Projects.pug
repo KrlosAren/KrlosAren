@@ -1,27 +1,17 @@
 extends ../components/_header.pug
+include ../components/_mixin.pug
 block content
-  .container__nav
+  div(class="container__nav")
+    include ../components/_nav.pug
     include ../views/menu.pug
-    include ../components/_menu.pug
   div#main__container
     main.main
       h3 Proyectos
       .main__projects
-        a(href="/")
-          .project
-            .project__modal
-                h4 Proyecto-1
-            img(src="https://dummyimage.com/600x400/c2c2c2/fff", alt="dummy")
-          .project
-            .project__modal
-                h4 Proyecto-1
-            img(src="https://dummyimage.com/600x400/c2c2c2/fff", alt="dummy")
-          .project
-            .project__modal
-                h4 Proyecto-1
-            img(src="https://dummyimage.com/600x400/c2c2c2/fff", alt="dummy")
-          .project
-            .project__modal
-                h4 Proyecto-1
-            img(src="https://dummyimage.com/600x400/c2c2c2/fff", alt="dummy")
+        +project_card
+        +project_card
+        +project_card
+        +project_card
+        +project_card
+        +project_card
     include ../components/_footer.pug

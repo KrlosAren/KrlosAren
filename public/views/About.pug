@@ -1,8 +1,8 @@
 extends ../components/_header.pug
 block content
-  .container__nav
+  div(class="container__nav")
+    include ../components/_nav.pug
     include ../views/menu.pug
-    include ../components/_menu.pug
   div#main__container
     main.main
       h3 Quien es Carlos

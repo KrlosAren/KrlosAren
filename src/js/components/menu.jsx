@@ -1,12 +1,14 @@
 const menu = () => {
   const buttonMenu = document.getElementById('buttonMenu');
-  const menuContainer = document.getElementById('menu__hidden');
-  const mainContainer = document.getElementById('main__container');
+  const menu = document.getElementById('menu');
+  const navigator = document.getElementById('navigator');
+  const main = document.getElementById('main__container');
   buttonMenu.addEventListener('click', () => {
-    menuContainer.classList.toggle('hiddenMenu');
-    mainContainer.classList.toggle('hidden');
+    menu.classList.toggle('hiddenMenu');
+    navigator.classList.toggle('hidden') ;
+    main.classList.toggle('hidden');
+    console.log('hola');
   });
-
 };
 
 export default menu;

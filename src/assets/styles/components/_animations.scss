@@ -96,3 +96,26 @@
     transform: rotate(45deg);
   }
 }
+
+.btnActive {
+  transition: 0.7s;
+
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+// .hiddenMenu {
+//   animation-duration: 0.5s;
+//   animation-name: appear;
+// }
+
+// @keyframes appear {
+//   0% {
+//     transform: translateX(-100vw);
+//   }
+
+//   100% {
+//     transform: translateX(0);
+//   }
+// }

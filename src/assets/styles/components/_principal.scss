@@ -93,9 +93,10 @@ main {
 
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(4, 250px);
+  grid-template-rows: repeat(4, 200px);
   height: auto;
   justify-items: center;
+  margin: 2em auto;
   margin-left: auto;
 
   &__text {
@@ -114,43 +115,58 @@ main {
     }
   }
 
-  &__paragraph--what {
+  &__paragraph--what,
+  &__paragraph--continue,
+  &__paragraph--last {
     @include mixin-paragraph;
     @include mixin-center-content;
 
     align-items: flex-start;
     flex-direction: column;
-    grid-column: 2/-1;
-    grid-row: 2/3;
     height: 100%;
-    width: 80%;
+    width: 70%;
+
+    b {
+      border-bottom: 2px solid #ff5874;
+      color: teal;
+    }
 
     h3 {
+      color: #16213e;
       font-size: $font-20;
       font-weight: $font-600;
     }
 
+    code {
+      color: #ff5874;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: $font-16;
+      padding: 0.5em;
+    }
+
     p {
+      line-height: 1.6em;
       margin: 1em 0;
+    }
+
+    del {
+      font-size: $font-16 - 3;
     }
   }
 
-  &__paragraph--continue {
-    @include mixin-center-content;
+  &__paragraph--what {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+  }
 
+  &__paragraph--continue {
     grid-column: 1/2;
     grid-row: 3/4;
-    height: 100%;
-    width: 80%;
   }
 
   &__paragraph--last {
-    @include mixin-center-content;
-
     grid-column: 2/-1;
     grid-row: 4/-1;
-    height: 100%;
-    width: 80%;
   }
 }
 
@@ -191,6 +207,15 @@ main {
       width: 60%;
     }
 
+    b {
+      border-bottom: 2px solid #ff5874;
+      color: teal;
+    }
+
+    del {
+      font-size: $font-16 - 3;
+    }
+
     ul {
       line-height: 1.8em;
       list-style: none;
@@ -199,6 +224,7 @@ main {
       li {
         font-size: $font-16 + 2;
         font-weight: $font-300;
+        line-height: 1.6em;
       }
     }
   }

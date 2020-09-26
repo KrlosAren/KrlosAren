@@ -1,7 +1,7 @@
 @include media(mobile-only) {
   .content,
   .main {
-    padding: 6em 1.5em 1em;
+    padding: 0 1.5em 1em;
     width: 100%;
   }
 
@@ -31,8 +31,8 @@
 
   .prologe {
     grid-template-columns: initial;
-    grid-template-rows: repeat(3, 250px);
-    padding: 3em;
+    grid-template-rows: repeat(4, 250px);
+    padding: 0 3em;
     width: 100%;
 
     &__text {
@@ -96,8 +96,6 @@
   }
 
   .main {
-    margin: 4em auto;
-
     &__text {
       width: 100%;
     }
@@ -117,13 +115,13 @@
   }
 
   .project {
-    height: auto;
+    height: 300px;
     margin-bottom: unset;
-    width: 300px;
+    width: 100%;
 
     img {
-      height: auto;
-      width: 300px;
+      height: 300px;
+      width: 100%;
     }
   }
 
@@ -137,6 +135,12 @@
       p {
         border: 1px dashed #16213e;
       }
+    }
+  }
+
+  .main__about {
+    img {
+      width: 100%;
     }
   }
 }

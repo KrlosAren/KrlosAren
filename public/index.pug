@@ -1,62 +1,63 @@
 extends ./components/_header.pug
 block content
-  div(class="container__nav")
-    include ./components/_nav.pug
-    include ./views/menu.pug
-  div#main__container
-    div(class="content__arrow" id='arrow')
-      h3(class="pulse") 👇🏻
-    div(class="content")
-      .content__text
-        h2(class="sayHello handHello") ✋🏻
-        span(class="textHello") H
-        span(class="textHello") o
-        span(class="textHello") l
-        span(class="textHello") a
-        span(class="textHello") !
-      div.dontClick
-        p(class="dontClick__text" id="buttonPunch") 👊🏻
-    .prologe
-      .prologe__text
-        h2 Sigues Aquí!
-      div(class="prologe__paragraph--what text__animation")
-        h3 Qué es esto?
-        p
-          | Este espacio es mi bitácora de viaje.
-          | <b>Que viaje?.</b> el que comenzo desde el primer
-          | <code>echo "Hola Mundo"</code><del>Si, empecé con PHP</de>.
-      div(class="prologe__paragraph--continue text__animation")
-        h3 Qué conseguirás?
-        p
-          | En este espacio veras como comencé.<br>
-          | Mis primeros proyectos.<br>
-          | Mi camino de aprendizaje y la actualización de mi viaje.<br>
-          | Además de algunos<code>console.log("Hola mundo")</code><del>me encanta JavaScript</del>.
-      div(class="prologe__paragraph--last text__animation")
-        h3 Qué quiero?
-        p
-          | Compartir lo que he aprendido.<br>
-          | Lo que he hecho.<br>
-          | Lo que pienso.<br>
-          | Quedate un rato, seguro consigues algo interesante.
-    .me
-      .me__img
-        img(src=require("../src/assets/images/Avatar_Carlos.svg").default, alt="")
-      .me__description
-        h2 Soy, Carlos 😁
-        ul
-          li Soy desarrollador <b>Front-end y Diseñador</b> 💻.
-          li 🏢 Estudié arquitectura.
-          li Vivo en <del>Venezuela, Costa Rica,</del> Chile. 
-          li Me gusta <b>viajar</b>, </b>🚀, <b>comer</b> 🍕 y <b>leer</b> 📚.
-          li Diariamente me cuestiono el porqué de la vida.
-          li Soy cinturon negro en karate-do 🥋. <del>(Miyagi fue mi sensei).</del>
-          li <b>La playa 🌴🥥 y la montaña 🌄 son mis lugares favoritos.</b>
-          li Salir a caminar 🏃🏻‍♂️  me ayuda a solucionar <b>problemas</b>(cocinar también 🥪).
-          li Quiero correr un ultramaratón algun día.
-          li <b>Aprender</b> cosas es parte de mi filosofía de vida 👓.
-          li Cuanto tengo tiempo libre, busco en que ocuparlo<del>(Síndrome de Estocolmo).</del>
-      div(class="me__buttons" id="buttons")
-        a(href="/About.html" class="button-primary button btnActive") Quién es Carlos
-        a(href="/Projects.html" class="button button-primary btnActive") Proyectos
-    include ./components/_footer.pug
+  #app
+  //- div(class="container__nav")
+  //-   include ./components/_nav.pug
+  //-   include ./views/menu.pug
+  //- div#main__container
+  //-   div(class="content__arrow" id='arrow')
+  //-     h3(class="pulse") 👇🏻
+  //-   div(class="content")
+  //-     .content__text
+  //-       h2(class="sayHello handHello") ✋🏻
+  //-       span(class="textHello") H
+  //-       span(class="textHello") o
+  //-       span(class="textHello") l
+  //-       span(class="textHello") a
+  //-       span(class="textHello") !
+  //-     div.dontClick
+  //-       p(class="dontClick__text" id="buttonPunch") 👊🏻
+  //-   .prologe
+  //-     .prologe__text
+  //-       h2 Sigues Aquí!
+  //-     div(class="prologe__paragraph--what text__animation")
+  //-       h3 Qué es esto?
+  //-       p
+  //-         | Este espacio es mi bitácora de viaje.
+  //-         | <b>Que viaje?.</b> el que comenzo desde el primer
+  //-         | <code>echo "Hola Mundo"</code><del>Si, empecé con PHP</de>.
+  //-     div(class="prologe__paragraph--continue text__animation")
+  //-       h3 Qué conseguirás?
+  //-       p
+  //-         | En este espacio veras como comencé.<br>
+  //-         | Mis primeros proyectos.<br>
+  //-         | Mi camino de aprendizaje y la actualización de mi viaje.<br>
+  //-         | Además de algunos<code>console.log("Hola mundo")</code><del>me encanta JavaScript</del>.
+  //-     div(class="prologe__paragraph--last text__animation")
+  //-       h3 Qué quiero?
+  //-       p
+  //-         | Compartir lo que he aprendido.<br>
+  //-         | Lo que he hecho.<br>
+  //-         | Lo que pienso.<br>
+  //-         | Quedate un rato, seguro consigues algo interesante.
+  //-   .me
+  //-     .me__img
+  //-       img(src=require("../src/assets/static/images/Avatar_Carlos.svg").default, alt="")
+  //-     .me__description
+  //-       h2 Soy, Carlos 😁
+  //-       ul
+  //-         li Soy desarrollador <b>Front-end y Diseñador</b> 💻.
+  //-         li 🏢 Estudié arquitectura.
+  //-         li Vivo en <del>Venezuela, Costa Rica,</del> Chile. 
+  //-         li Me gusta <b>viajar</b>, </b>🚀, <b>comer</b> 🍕 y <b>leer</b> 📚.
+  //-         li Diariamente me cuestiono el porqué de la vida.
+  //-         li Soy cinturon negro en karate-do 🥋. <del>(Miyagi fue mi sensei).</del>
+  //-         li <b>La playa 🌴🥥 y la montaña 🌄 son mis lugares favoritos.</b>
+  //-         li Salir a caminar 🏃🏻‍♂️  me ayuda a solucionar <b>problemas</b>(cocinar también 🥪).
+  //-         li Quiero correr un ultramaratón algun día.
+  //-         li <b>Aprender</b> cosas es parte de mi filosofía de vida 👓.
+  //-         li Cuanto tengo tiempo libre, busco en que ocuparlo<del>(Síndrome de Estocolmo).</del>
+  //-     div(class="me__buttons" id="buttons")
+  //-       a(href="/About.html" class="button-primary button btnActive") Quién es Carlos
+  //-       a(href="/Projects.html" class="button button-primary btnActive") Proyectos
+  //-   include ./components/_footer.pug

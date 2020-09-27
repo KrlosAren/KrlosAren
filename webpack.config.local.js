@@ -23,7 +23,7 @@ const htmlPlugins = generateHtmlPlugins('./public/views');
 
 module.exports = {
   entry: {
-    app: path.resolve(__dirname, './src/app.js'),
+    app: path.resolve(__dirname, './src/index.js'),
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
@@ -111,7 +111,7 @@ module.exports = {
       filename: '[name].[hash].css',
     }),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/app.*', '**/commons.*'],
+      cleanOnceBeforeBuildPatterns: ['**/app.*.*', '**/commons.*.*'],
     }),
     new StylelintPlugin({
       configFile: '.stylelintrc.json',

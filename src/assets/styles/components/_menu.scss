@@ -41,10 +41,12 @@
       margin: 0 0.5em;
     }
 
-    p {
+    button {
+      background-color: transparent;
       border: 1px solid transparent;
       border-radius: 0.5em;
       color: #16213e;
+      outline: none;
       padding: 0.5em 2em;
 
       &:hover {

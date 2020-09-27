@@ -56,6 +56,13 @@ main {
       color: unset;
       cursor: pointer;
       transition: 0.2s;
+
+      &::before {
+        color: #16213e;
+        content: 'No me presiones!';
+        font-weight: $font-600;
+        text-transform: capitalize;
+      }
     }
   }
 }

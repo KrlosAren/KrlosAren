@@ -3,36 +3,35 @@
   z-index: 1000;
 }
 
-.navigator {
+.nav__header {
   @include mixin-center-content;
 
-  align-items: center;
-  height: 100%;
+  height: 5em;
   justify-content: space-between;
   margin: 0 auto;
-  width: 80%;
+  padding: 0 7em;
+  position: fixed;
+  // position: absolute;
+  top: 4em;
+  width: 100%;
+  z-index: 1000;
 
-  a {
-    img {
-      height: 90px;
-      width: 90px;
-    }
+  img {
+    height: 80px;
+    width: 80px;
   }
 
-  p {
+  button {
+    background-color: transparent;
     border: 1px solid transparent;
     border-radius: 0.5em;
-    font-size: $font-20;
-    padding: 0.3em 1em;
+    color: #16213e;
+    outline: none;
+    padding: 0.5em 2em;
 
     &:hover {
-      border: 1px dashed #0cc;
+      border: 1px dashed #16213e;
       cursor: pointer;
-      transition: 0.3s;
-    }
-
-    &:active {
-      transform: scale(0.8);
     }
   }
 }

@@ -30,15 +30,15 @@ const Menu = () => {
             <span>Regreso al Home Page</span>
           </div>
           <div className='nav__links--item'>
-            <Link to='/Projects'>Projects</Link>
+            <Link to='/projects'>Projects</Link>
             <span>Algunos proyectos</span>
           </div>
           <div className='nav__links--item'>
-            <Link to='/About'>Yo</Link>
+            <Link to='/about'>Yo</Link>
             <span>Acerca de mi</span>
           </div>
           <div className='nav__links--item'>
-            <Link to='/MakeSimple'>Make It Simple</Link>
+            <Link to='/makesimple'>Make It Simple</Link>
             <span>Para aprender</span>
           </div>
         </div>

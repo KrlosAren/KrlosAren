@@ -7,6 +7,7 @@ import About from './About';
 import Projects from './Projects';
 import MakeSimple from './MakeSimple';
 import NotFound from './NotFound';
+import Menu from './Menu';
 
 const App = () => {
   return (
@@ -14,11 +15,12 @@ const App = () => {
       <Layout>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/About' component={About} />
-          <Route exact path='/Projects' component={Projects} />
-          <Route exact path='/MakeSimple' component={MakeSimple} />
-          <Route exact path='/404' component={NotFound} />
-          <Redirect from='*' to='/404' />
+          <Route exact path='/menu' component={Menu} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/projects' component={Projects} />
+          <Route exact path='/blog' component={MakeSimple} />
+          <Route path='/notfound' component={NotFound} />
+          <Redirect from='*' to='/notfound' />
         </Switch>
       </Layout>
     </BrowserRouter>

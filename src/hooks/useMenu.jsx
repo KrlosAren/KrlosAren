@@ -4,9 +4,11 @@ const useMenu = () => {
   const [menu, setMenu] = useState({ isVisible: false });
   const menuContainer = document.getElementById('menu');
 
-  if (menu.isVisible) {
-    menuContainer.classList.toggle('hiddenMenu');
+  if (menu.isVisible === true) {
+    // menuContainer.classList.toggle('hiddenMenu');
+    console.log('hola');
   }
+
 };
 
 export default useMenu;

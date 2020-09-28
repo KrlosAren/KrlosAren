@@ -17,49 +17,10 @@
   padding: 7em 5em;
   width: 95%;
 
-  &__header {
-    @include mixin-center-content;
-
-    height: 5em;
-    justify-content: space-between;
-    margin: 0 auto;
-    padding: 0 7em;
-    position: fixed;
-    // position: absolute;
-    top: 4em;
-    width: 100%;
-    z-index: 1000;
-
-    img {
-      height: 90px;
-      width: 90px;
-    }
-
-    span {
-      color: #056676;
-      font-size: $font-20;
-      margin: 0 0.5em;
-    }
-
-    button {
-      background-color: transparent;
-      border: 1px solid transparent;
-      border-radius: 0.5em;
-      color: #16213e;
-      outline: none;
-      padding: 0.5em 2em;
-
-      &:hover {
-        border: 1px dashed #16213e;
-        cursor: pointer;
-      }
-    }
-
-    &--close {
-      color: white;
-      font-size: $font-32;
-      text-decoration: none;
-    }
+  &--close {
+    color: white;
+    font-size: $font-32;
+    text-decoration: none;
   }
 
   &__rrss {

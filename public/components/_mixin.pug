@@ -10,4 +10,4 @@ mixin project_card(url, title, img)
     a(href=url target='_blank')
       .project__modal
         h4=title
-      img(src='../../src/assets/images/'+img, alt=title)
+      img(src=require('../../src/assets/images/'+img).default, alt=title)

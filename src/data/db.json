@@ -1,21 +1,44 @@
-{
-  "post":[
-    {
-      "id": 1,
-      "title": "Mini Retos para Intentar",
-      "content": [ 
-        {
-          'Cambiar de área de conocimiento no siempre es sencillo, salir de la zona de confort no resulta un paso fácil. Este es mi caso, soy arquitecto de profesión, pero con ganas de trabajar en tecnología.',
-          'Cuando das tus primeros pasos en programación puede ser abrumador, Backend, Frontend, Base de Datos, PHP, JavaScript, Dockers, DevOps y otros términos que parecerían imposibles de entender. Tranquilo solo respira y sigue leyendo.',
-          'Decidir que aprender de primero puede ser una decisión difícil, en mi caso decidí aprender sobre desarrollo web y en paralelo ir tomando cursos y clases sobre fundamentos de programación, necesario cuando solo conoces lo básico de computadoras.',
-          'Esta decisión se basa en la cercanía que tengo con el diseño, un área que se me hace más familiar , esto me llevo a aprender lenguajes como HTML y CSS para pintar en el navegador y poder visualizar lo que voy creando, sin embargo, esto no es suficiente para realizar funcionalidades con las que interactuamos en nuestras aplicaciones favoritas, así que era necesario aprender JavaScript(JS), un lenguaje de programación que te permite interactuar con el navegador, el cliente y poder darle más dinamismo a tus aplicaciones web.',
-          'Claro, aprender JavaScript puede ser una tarea larga y un poco frustrante, así que luego de varios cursos, mucha practica y más errores, decidí realizar ciertos retos que permitan poner en práctica los conocimientos que he ido adquiriendo. Y es esto lo que te quiero compartir.',
-          'Mi intención es ir poniendo en práctica HTML, CSS y JS a través de pequeñas aplicaciones, porque conozco lo frustrante que puede ser querer realizar una aplicación compleja. Entonces apliquemos “Divide y vencerás”, con pequeñas piedras se construyen grandes caminos.',
-          'Haremos esto juntos, con cada reto aprenderemos nuevas cosas, que pueden parecer pequeñas pero con la combinación de todas puedes hacer el siguiente Google, bueno espera un poco, primero aprendamos a hacer una calculadora.',
-          'El primer reto será realizar un DropDown.',
-          'Aquí el resultado final:'
-        }
-      ]
-    }
-  ]
-}
+[
+  {
+    "id":  1,
+    "title": "Suculentagram",
+    "url":"https://krlosaren.github.io/Suculentagram/",
+    "img":"../src/assets/images/suculentagram.png"
+  },
+  {
+    "id":  2,
+    "title": "Task User",
+    "url":"https://todo-user-project.uc.r.appspot.com/home",
+    "img":"../src/assets/images/taskUser.png"
+  },
+  {
+    "id":  3,
+    "title": "Static Jobs Listings",
+    "url":"https://github.com/KrlosAren/static-jobs-listings-master",
+    "img":"../src/assets/images/static-jobs-listings-master_.png"
+  },
+  {
+    "id":  4,
+    "title": "Article Preview",
+    "url":"https://github.com/KrlosAren/article-preview-component",
+    "img":"../src/assets/images/article-preview.png"
+  },
+  {
+    "id":  5,
+    "title": "Social Media Dashboard",
+    "url":"https://krlosaren.github.io/social-media-dashboard/",
+    "img":"../src/assets/images/social-media-dashboard_.png"
+  },
+  {
+    "id":  6,
+    "title": "Huddle Landing Page",
+    "url":"https://krlosaren.github.io/huddle-landing-page/",
+    "img":"../src/assets/images/huddle-landing-page_.png"
+  },
+  {
+    "id":  7,
+    "title": "Four Card Feature",
+    "url":"https://krlosaren.github.io/four-card-feature-section-master/",
+    "img":"../src/assets/images/four-card.png"
+  }
+]

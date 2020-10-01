@@ -111,7 +111,7 @@ module.exports = {
       filename: '[name].[hash].css',
     }),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/app.*.*', '**/commons.*.*'],
+      cleanOnceBeforeBuildPatterns: ['**/app.*.[hash]*', '**/commons.[hash].*'],
     }),
     new StylelintPlugin({
       configFile: '.stylelintrc.json',

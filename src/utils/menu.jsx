@@ -1,14 +1,13 @@
+
 const menu = () => {
-  const buttonMenu = document.getElementById('buttonMenu');
-  const menu = document.getElementById('menu');
-  const navigator = document.getElementById('navigator');
-  const main = document.getElementById('main__container');
-  buttonMenu.addEventListener('click', () => {
-    menu.classList.toggle('hiddenMenu');
-    navigator.classList.toggle('hidden') ;
-    main.classList.toggle('hidden');
-    console.log('hola');
-  });
+  const mainContainer = document.getElementById('main__container');
+  const menuContainer = document.getElementById('menu');
+  const footerContainer = document.getElementById('container__footer');
+
+  mainContainer.classList.toggle('hidden');
+  menuContainer.classList.toggle('hiddenMenu');
+  footerContainer.classList.toggle('hidden');
+
 };
 
 export default menu;

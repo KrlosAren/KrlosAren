@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Me = ({ avatar }) => {
   return (
@@ -87,8 +87,8 @@ const Me = ({ avatar }) => {
         </ul>
       </div>
       <div className='me__buttons' id='buttons'>
-        <Link className='button-primary button btnActive' to='/About'>Quién es Carlos</Link>
-        <Link className='button button-primary btnActive' to='/Projects'>Proyectos</Link>
+        <NavLink className='button-primary button btnActive' to='/about'>Quién es Carlos</NavLink>
+        <NavLink className='button button-primary btnActive' to='/projects'>Proyectos</NavLink>
       </div>
     </div>
 

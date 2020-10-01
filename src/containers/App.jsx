@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
 
-import Home from '../components/Home';
+import Home from '../pages/Home';
 import Layout from '../components/Layout';
-import About from './About';
-import Projects from './Projects';
-import MakeSimple from './MakeSimple';
-import NotFound from './NotFound';
-import Menu from './Menu';
+import About from '../pages/About';
+import Projects from '../pages/Projects';
+import MakeSimple from '../pages/MakeSimple';
+import Post from '../pages/Post';
+import NotFound from '../pages/NotFound';
 
 const App = () => {
   return (
@@ -15,12 +15,12 @@ const App = () => {
       <Layout>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/menu' component={Menu} />
           <Route exact path='/about' component={About} />
           <Route exact path='/projects' component={Projects} />
-          <Route exact path='/blog' component={MakeSimple} />
-          <Route path='/notfound' component={NotFound} />
-          <Redirect from='*' to='/notfound' />
+          <Route exact path='/makeSimple' component={MakeSimple} />
+          <Route exact path='/makeSimple/mini-retos-para-intentar' component={Post} />
+          <Redirect from='*' to='/404' />
+          <Route exact path='/404' component={NotFound} />
         </Switch>
       </Layout>
     </BrowserRouter>

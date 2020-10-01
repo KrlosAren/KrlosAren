@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import menu from '../utils/menu';
+
 const Menu = () => {
   return (
     <div className='nav__container hiddenMenu' id='menu'>
@@ -26,19 +28,19 @@ const Menu = () => {
         </div>
         <div className='nav__links'>
           <div className='nav__links--item'>
-            <Link to='/'>Home</Link>
+            <Link to='/' onClick={menu}>Home</Link>
             <span>Regreso al Home Page</span>
           </div>
           <div className='nav__links--item'>
-            <Link to='/projects'>Projects</Link>
+            <Link to='/projects' onClick={menu}>Projects</Link>
             <span>Algunos proyectos</span>
           </div>
           <div className='nav__links--item'>
-            <Link to='/about'>Yo</Link>
+            <Link to='/about' onClick={menu}>Yo</Link>
             <span>Acerca de mi</span>
           </div>
           <div className='nav__links--item'>
-            <Link to='/makesimple'>Make It Simple</Link>
+            <Link to='/makesimple' onClick={menu}>Make It Simple</Link>
             <span>Para aprender</span>
           </div>
         </div>

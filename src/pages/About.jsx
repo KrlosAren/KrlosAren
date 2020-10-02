@@ -1,6 +1,6 @@
 import React from 'react';
 
-import illustration from '../assets/static/images/copyImg-01.svg';
+import illustration from '../assets/static/images/illustracion_carlos.svg';
 
 const About = () => {
   return (

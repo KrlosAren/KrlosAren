@@ -1,5 +1,7 @@
 import React from 'react';
 
+import letters from '../utils/letters';
+
 const Header = () => {
   return (
     <div className='content'>
@@ -12,17 +14,19 @@ const Header = () => {
         <h2 className='sayHello handHello'>
           <span role='img' aria-label='hand-shake'>✋🏻</span>
         </h2>
-        <span className='textHello'>H</span>
-        <span className='textHello'>o</span>
-        <span className='textHello'>l</span>
-        <span className='textHello'>a</span>
-        <span className='textHello'>!</span>
+        <div style={{ display: 'flex' }} id='hola__container'>
+          <span className='textHello'>H</span>
+          <span className='textHello'>o</span>
+          <span className='textHello'>l</span>
+          <span className='textHello'>a</span>
+          <span className='textHello'>!</span>
+        </div>
       </div>
-      <div className='dontClick'>
+      <button className='dontClick' onClick={letters} type='button'>
         <p className='dontClick__text' id='buttonPunch'>
           <span role='img' aria-label='punch'>👊🏻</span>
         </p>
-      </div>
+      </button>
     </div>
   );
 };

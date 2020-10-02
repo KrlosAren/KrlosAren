@@ -3,23 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
-const fs = require('fs');
-
-function generateHtmlPlugins(templateDir) {
-  const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
-  return templateFiles.map((item) => {
-    // Split names and extension
-    const parts = item.split('.');
-    const name = parts[0];
-    const extension = parts[1];
-    return new HtmlWebpackPlugin({
-      filename: `${name}.html`,
-      template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-    });
-  });
-}
-
-const htmlPlugins = generateHtmlPlugins('./public/views');
 
 module.exports = {
   entry: {
@@ -27,7 +10,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: './js/[name].[hash].js',
+    filename: 'js/[name].[hash].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -35,7 +18,6 @@ module.exports = {
   devServer: {
     port: 3000,
     open: true,
-    writeToDisk: true,
   },
   module: {
     rules: [
@@ -94,7 +76,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: './src/assets/[name].[hash].[ext]',
+              name: 'assets/[name].[hash].[ext]',
             },
           },
         ],
@@ -108,15 +90,15 @@ module.exports = {
       inject: true,
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
+      filename: 'assets/[name].[hash].css',
     }),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/app.*.[hash]*', '**/commons.[hash].*'],
+      cleanOnceBeforeBuildPatterns: ['**/app.*.*', '**/commons.*.*'],
     }),
     new StylelintPlugin({
       configFile: '.stylelintrc.json',
       files: '**/*.s?(a|c)ss',
       fix: true,
     }),
-  ].concat(htmlPlugins),
+  ],
 };

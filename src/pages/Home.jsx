@@ -1,9 +1,10 @@
 import React from 'react';
 
-import avatar from '../assets/static/images/Avatar_Carlos.svg';
 import Prologe from '../components/Prologe';
 import Header from '../components/Header';
 import Me from '../components/Me';
+
+import avatar from '../assets/static/images/illustracion_carlos.svg';
 
 const Home = () => {
   return (

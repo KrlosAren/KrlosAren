@@ -4,13 +4,13 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Menu from './Menu';
 
-import avatar from '../assets/static/images/Avatar_Carlos.svg';
+import icon from '../assets/static/images/icon_page.svg';
 
 const Layout = ({ children }) => {
 
   return (
     <>
-      <Navbar avatar={avatar} />
+      <Navbar avatar={icon} />
       <Menu />
       {children}
       <Footer />

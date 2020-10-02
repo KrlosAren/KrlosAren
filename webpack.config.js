@@ -16,7 +16,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './js/[name].[hash].js',
-    publicPath: 'http://localhost:3001/',
     chunkFilename: 'js/[id].[chunkhash].js',
   },
   optimization: {
@@ -85,21 +84,10 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: './src/assets/images/[name].[hash].[ext]',
+              name: 'assets/[name].[hash].[ext]',
             },
           },
         ],
-      },
-      {
-        test: /\.jpg|png|gif|woff|eot|ttf|svg|mp4|webm$/,
-        use: {
-          loader: 'url-loader',
-          options: {
-            limit: 1000,
-            name: '[hash].[ext]',
-            outputPath: 'assets',
-          },
-        },
       },
     ],
   },
@@ -122,7 +110,6 @@ module.exports = {
     new AddAssetHtmlPlugin({
       filepath: path.resolve(__dirname, 'dist/js/*.dll.js'),
       outputPath: 'js',
-      publicPath: 'http://localhost:3001/js',
     }),
     new StylelintPlugin({
       configFile: '.stylelintrc.json',

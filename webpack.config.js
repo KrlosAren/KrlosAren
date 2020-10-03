@@ -3,11 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
-const MiniCSSExtractPlugin = require('mini-css-extract-plugin');
-const webpack = require('webpack');
-const AddAssetHtmlPlugin = require('add-asset-html-webpack-plugin');
-const TersetJsPlugin = require('terser-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -16,13 +11,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: './js/[name].[hash].js',
-    chunkFilename: 'js/[id].[chunkhash].js',
-  },
-  optimization: {
-    minimizer: [
-      new TersetJsPlugin(),
-      new OptimizeCSSAssetsPlugin(),
-    ],
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -84,7 +72,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'assets/[name].[hash].[ext]',
+              name: './src/assets/[name].[hash].[ext]',
             },
           },
         ],
@@ -97,19 +85,11 @@ module.exports = {
       filename: 'index.html',
       inject: true,
     }),
-    new MiniCSSExtractPlugin({
-      filename: 'src/assets/styles/[name].[hash].css',
-      chunkFilename: 'src/assets/styles/[id].[hash].css',
+    new MiniCssExtractPlugin({
+      filename: '[name].[hash].css',
     }),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/app.*.*', '**/commons.*.*'],
-    }),
-    new webpack.DllReferencePlugin({
-      manifest: require('./modules-manifest.json'),
-    }),
-    new AddAssetHtmlPlugin({
-      filepath: path.resolve(__dirname, 'dist/js/*.dll.js'),
-      outputPath: 'js',
+      cleanOnceBeforeBuildPatterns: ['**/app.*', '**/commons.*'],
     }),
     new StylelintPlugin({
       configFile: '.stylelintrc.json',

@@ -11,15 +11,11 @@
 }
 
 .content__text span:nth-of-type(4) {
-  animation-name: rotateLetter;
+  animation-name: rotation;
 }
 
 .content__text span:nth-of-type(5) {
   animation-name: bunce;
-}
-
-.content__text span:nth-of-type(6) {
-  border: 1px solid red;
 }
 
 .hinge {
@@ -34,12 +30,12 @@
     transform: rotateZ(90deg);
   }
 
-  85% {
+  10% {
     transform: rotate(20deg, 30deg, 180deg) rotateX(5px);
   }
 }
 
-@keyframes rotateLetter {
+@keyframes rotation {
   0% {
     transform: rotateX(5deg);
   }

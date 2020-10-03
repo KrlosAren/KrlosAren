@@ -40,10 +40,8 @@ main {
   @include mixin-center-content;
 
   background-color: rgba(0, 128, 128, 0.589);
-  border: transparent;
   justify-content: flex-start;
   margin-top: 0.3em;
-  outline: none;
   text-align: right;
   text-transform: uppercase;
   width: 60%;
@@ -194,13 +192,11 @@ main {
   &__img {
     @include mixin-center-content;
 
-    height: 300px;
-    margin: 0 auto;
-    width: 300px;
+    height: auto;
 
     img {
-      height: 300px;
-      width: 300px;
+      height: 200px;
+      width: 200px;
     }
   }
 

@@ -10,7 +10,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'js/[name].[hash].js',
+    filename: './js/[name].[hash].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -18,6 +18,7 @@ module.exports = {
   devServer: {
     port: 3000,
     open: true,
+    writeToDisk: true,
   },
   module: {
     rules: [
@@ -76,7 +77,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: 'assets/[name].[hash].[ext]',
+              name: './src/assets/[name].[hash].[ext]',
             },
           },
         ],
@@ -90,10 +91,10 @@ module.exports = {
       inject: true,
     }),
     new MiniCssExtractPlugin({
-      filename: 'assets/[name].[hash].css',
+      filename: '[name].[hash].css',
     }),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/app.*.*', '**/commons.*.*'],
+      cleanOnceBeforeBuildPatterns: ['**/app.*.[hash]*', '**/commons.[hash].*'],
     }),
     new StylelintPlugin({
       configFile: '.stylelintrc.json',

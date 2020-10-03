@@ -10,7 +10,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: './js/[name].[hash].js',
+    filename: 'js/[name].[hash].js',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -72,7 +72,7 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              name: './src/assets/[name].[hash].[ext]',
+              name: 'assets/[name].[hash].[ext]',
             },
           },
         ],
@@ -86,7 +86,7 @@ module.exports = {
       inject: true,
     }),
     new MiniCssExtractPlugin({
-      filename: '[name].[hash].css',
+      filename: 'assets/[name].[hash].css',
     }),
     new CleanWebpackPlugin({
       cleanOnceBeforeBuildPatterns: ['**/app.*', '**/commons.*'],

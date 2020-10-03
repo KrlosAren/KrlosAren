@@ -22,11 +22,11 @@ const Header = () => {
           <span className='textHello'>!</span>
         </div>
       </div>
-      <button className='dontClick' onClick={letters} type='button'>
+      <div className='dontClick' onClick={letters} role='button' tabIndex={-1}>
         <p className='dontClick__text' id='buttonPunch'>
           <span role='img' aria-label='punch'>👊🏻</span>
         </p>
-      </button>
+      </div>
     </div>
   );
 };

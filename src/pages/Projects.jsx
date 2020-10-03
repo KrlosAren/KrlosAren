@@ -4,7 +4,7 @@ import Project from '../components/Project';
 
 const Projects = () => {
 
-  const { projects } = require('../../data/db.json');
+  const { projects } = require('../../server/db.json');
 
   return (
     <div id='main__container'>

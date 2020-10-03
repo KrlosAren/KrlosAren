@@ -4,9 +4,8 @@ import Prologe from '../components/Prologe';
 import Header from '../components/Header';
 import Me from '../components/Me';
 
-import avatar from '../assets/static/images/illustracion_carlos.svg';
-
 const Home = () => {
+  const avatar = 'https://storage.googleapis.com/krlosaren-portafolio/images/avatar_carlos.svg';
   return (
     <div id='main__container'>
       <Header />

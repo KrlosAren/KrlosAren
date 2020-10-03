@@ -1,8 +1,8 @@
 import React from 'react';
 
-import illustration from '../assets/static/images/illustracion_carlos.svg';
-
 const About = () => {
+  const avatar = 'https://storage.googleapis.com/krlosaren-portafolio/images/avatar_carlos.svg';
+
   return (
     <div id='main__container'>
 
@@ -142,7 +142,7 @@ const About = () => {
             🚀
           </p>
         </div>
-        <img src={illustration} alt='illustration' />
+        <img className='illustration__about' src={avatar} alt='illustration' />
       </main>
     </div>
   );

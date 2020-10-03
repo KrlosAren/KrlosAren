@@ -1,6 +1,5 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
 
@@ -59,14 +58,12 @@ module.exports = {
             options: {
               sourceMap: true,
               importLoaders: 1,
-              url: true,
             },
           },
           {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
-              implementation: require('sass'),
             },
           },
         ],
@@ -90,11 +87,8 @@ module.exports = {
       filename: 'index.html',
       inject: true,
     }),
-    new MiniCssExtractPlugin({
-      filename: 'assets/[name].[hash].css',
-    }),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/app.*.[hash]*', '**/commons.[hash].*'],
+      cleanOnceBeforeBuildPatterns: ['**/app.*.*', '**/commons.*.*'],
     }),
     new StylelintPlugin({
       configFile: '.stylelintrc.json',

@@ -4,10 +4,9 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import Menu from './Menu';
 
-import icon from '../assets/static/images/icon_page.svg';
-
 const Layout = ({ children }) => {
 
+  const icon = 'https://storage.googleapis.com/krlosaren-portafolio/images/icon_page.svg';
   return (
     <>
       <Navbar avatar={icon} />

@@ -1,13 +1,12 @@
 import React from 'react';
 
-const css1 = '../src/assets/images/ccs1.svg';
-const css2 = '../src/assets/images/css2.svg';
-const css3 = '../src/assets/images/css3.svg';
-const html = '../src/assets/images/html.svg';
-const js = '../src/assets/images/js.svg';
-const makesimple = '../src/assets/images/makesimple.gif';
-
 const Post = () => {
+  const css1 = 'https://storage.googleapis.com/krlosaren-portafolio/images/ccs1.svg';
+  const css2 = 'https://storage.googleapis.com/krlosaren-portafolio/images/css2.svg';
+  const css3 = 'https://storage.googleapis.com/krlosaren-portafolio/images/css3.svg';
+  const html = 'https://storage.googleapis.com/krlosaren-portafolio/images/html.svg';
+  const js = 'https://storage.googleapis.com/krlosaren-portafolio/images/js.svg';
+  const makesimple = 'https://storage.googleapis.com/krlosaren-portafolio/images/makesimple.gif';
   return (
     <div id='main__container'>
       <main className='main'>

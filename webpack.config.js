@@ -54,14 +54,12 @@ module.exports = {
             options: {
               sourceMap: true,
               importLoaders: 1,
-              url: true,
             },
           },
           {
             loader: 'sass-loader',
             options: {
               sourceMap: true,
-              implementation: require('sass'),
             },
           },
         ],

@@ -1,0 +1,146 @@
+@include media(mobile-only) {
+  .content,
+  .main {
+    padding: 0 1.5em 1em;
+    width: 100%;
+  }
+
+  .content__text {
+    justify-content: space-evenly;
+    margin: 0 auto;
+    width: 100%;
+
+    span {
+      font-size: $font-32 * 2;
+    }
+
+    h2 {
+      font-size: $font-32 * 2;
+    }
+  }
+
+  .dontClick {
+    justify-content: center;
+    margin: 0.3em auto;
+    width: 100%;
+  }
+
+  .content__arrow {
+    padding: 1em;
+  }
+
+  .prologe {
+    grid-template-columns: initial;
+    grid-template-rows: repeat(4, 250px);
+    padding: 0 3em;
+    width: 100%;
+
+    &__text {
+      justify-content: center;
+      width: 100%;
+
+      h2 {
+        font-size: $font-32 * 2;
+        width: 100%;
+      }
+    }
+
+    &__paragraph--what,
+    &__paragraph--continue,
+    &__paragraph--last {
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .me {
+    padding: 3em;
+    width: 100%;
+
+    &__img {
+      img {
+        height: 120px;
+        width: 120px;
+      }
+    }
+
+    &__description {
+      justify-content: space-around;
+      width: 100%;
+
+      h2 {
+        font-size: $font-32 + 10;
+        width: 100%;
+      }
+
+      ul {
+        width: 100%;
+
+        li {
+          font-size: $font-16 - 1;
+        }
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      a {
+        border: 2px solid teal;
+        height: 4em;
+        width: 100%;
+      }
+    }
+  }
+
+  .main {
+    &__text {
+      width: 100%;
+    }
+
+    h3 {
+      font-size: $font-32 + 10;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &__projects {
+      flex-direction: column;
+      height: auto;
+      margin: 0 auto;
+      width: 100%;
+    }
+  }
+
+  .project {
+    height: 300px;
+    margin-bottom: unset;
+    width: 100%;
+
+    img {
+      height: 300px;
+      width: 100%;
+    }
+  }
+
+  .blog__card {
+    height: auto;
+    width: 100%;
+  }
+
+  .nav {
+    &__header {
+      p {
+        border: 1px dashed #16213e;
+      }
+    }
+  }
+
+  .main__about {
+    img {
+      width: 100%;
+    }
+  }
+}

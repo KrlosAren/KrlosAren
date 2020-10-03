@@ -1,0 +1,48 @@
+.main {
+  @include mixin-content;
+  @include mixin-center-content;
+
+  flex-direction: column;
+  height: auto;
+  margin: 6em auto 1em;
+
+  h3 {
+    border-bottom: 3px solid black;
+    font-size: $font-20 * 3;
+    margin: 0 auto;
+    text-align: center;
+    width: 40%;
+  }
+
+  img {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  &__text {
+    line-height: 1.6em;
+    margin: 3em auto;
+    text-align: left;
+    width: 60%;
+
+    p {
+      line-height: 2.2em;
+
+      b {
+        border-bottom: 2px solid #ff5874;
+        color: teal;
+      }
+
+      del {
+        font-size: $font-16 - 3;
+      }
+
+      code {
+        color: #ff5874;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: $font-16;
+        padding: 0.5em;
+      }
+    }
+  }
+}

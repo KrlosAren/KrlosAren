@@ -1,0 +1,18 @@
+extends ../components/_header.pug
+include ../components/_mixin.pug
+block content
+  div(class="container__nav")
+    include ../components/_nav.pug
+    include ../views/menu.pug
+  div#main__container
+    main(class="main main__project")
+      h3 Proyectos
+      .main__projects
+        +project_card('https://krlosaren.github.io/Suculentagram/', 'Suculentagram', 'suculentagram.png')
+        +project_card('https://todo-user-project.uc.r.appspot.com/home', 'Task User', 'taskUser.png')
+        +project_card('https://github.com/KrlosAren/static-jobs-listings-master', 'Static Jobs Listings', 'static-jobs-listings-master_.png')
+        +project_card('https://github.com/KrlosAren/article-preview-component', 'Article Preview', 'article-preview.png')
+        +project_card('https://krlosaren.github.io/social-media-dashboard/', 'Social Media Dashboard', 'social-media-dashboard_.png')
+        +project_card('https://krlosaren.github.io/huddle-landing-page/', 'Huddle Landing Page', 'huddle-landing-page_.png')
+        +project_card('https://krlosaren.github.io/four-card-feature-section-master/', 'Four Card Feature', 'four-card.png')
+    include ../components/_footer.pug

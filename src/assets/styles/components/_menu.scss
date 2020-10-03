@@ -1,0 +1,94 @@
+.nav__container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100%;
+  z-index: 100;
+}
+
+.hiddenMenu {
+  display: none;
+  transform: translateX(-100vw);
+}
+
+.nav {
+  background-color: rgba($color: #92dce5, $alpha: 1);
+  height: 90%;
+  padding: 7em 5em;
+  width: 95%;
+
+  &--close {
+    color: white;
+    font-size: $font-32;
+    text-decoration: none;
+  }
+
+  &__rrss {
+    @include mixin-center-content;
+
+    justify-content: flex-start;
+    width: 100%;
+
+    &--line {
+      @include mixin-center-content;
+
+      justify-content: flex-start;
+      width: 100%;
+
+      &::before {
+        background-color: #16213e;
+        content: '';
+        height: 0.3em;
+        width: 10%;
+      }
+    }
+
+    img {
+      height: 25px;
+      margin: 0 1em;
+      width: 25px;
+    }
+  }
+
+  &__links {
+    @include mixin-center-content;
+
+    align-items: flex-start;
+    flex-direction: column;
+    height: auto;
+    justify-content: space-around;
+    width: 100%;
+
+    &--item {
+      @include mixin-center-content;
+
+      align-items: baseline;
+      height: 100%;
+      justify-content: flex-start;
+      width: 100%;
+
+      a {
+        color: #16213e;
+        font-family: $font-robotoslab;
+        font-size: $font-32 + 6;
+        margin: 0.3em 0;
+        text-decoration: none;
+        width: 30%;
+
+        &:hover {
+          color: #f4f6ff;
+        }
+      }
+
+      span {
+        color: #16213e;
+        font-family: $font-nunito;
+        font-size: $font-16;
+        font-weight: $font-300;
+        height: 100%;
+        vertical-align: bottom;
+      }
+    }
+  }
+}

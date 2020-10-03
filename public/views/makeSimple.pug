@@ -1,0 +1,14 @@
+extends ../components/_header.pug
+include ../components/_mixin.pug
+block content
+  - var content = '../../src/data/db.json'
+  - var articles = 5;
+  div(class="container__nav")
+    include ../components/_nav.pug
+    include ../views/menu.pug
+  div#main__container
+    main.main
+      h3 Make It Simple
+      .main__blog
+        +blog_card('Mini Retos para Intentar','Cambiar de área de conocimiento no siempre es sencillo, salir de la zona de confort no resulta un paso fácil. Este es mi caso, soy arquitecto de profesión, pero con ganas de trabajar en tecnología.', 'Cuando das tus primeros pasos en programación puede ser abrumador, Backend, Frontend, Base de Datos, PHP, JavaScript, Dockers, DevOps y otros términos que parecerían imposibles de entender. Tranquilo solo respira y sigue leyendo.')
+    include ../components/_footer.pug

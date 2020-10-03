@@ -1,0 +1,45 @@
+.main__blog {
+  margin: 0 auto;
+}
+
+.blog__card {
+  @include mixin-center-content;
+
+  align-items: flex-start;
+  flex-direction: column;
+  height: 250px;
+  justify-content: flex-start;
+  margin: 3em auto;
+  width: 60%;
+
+  h4 {
+    background-color: #00808070;
+    color: #ebeaea;
+    font-size: $font-28;
+    height: auto;
+    justify-content: flex-start;
+    padding: 0.2em;
+    text-align: left;
+    width: 100%;
+  }
+
+  p {
+    height: calc(100% - 3em);
+    line-height: 2em;
+    margin-bottom: 0.8em;
+    margin-top: 0.8em;
+    width: 100%;
+  }
+
+  a {
+    align-self: flex-end;
+    color: teal;
+    font-weight: $font-700;
+    letter-spacing: 0.2em;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

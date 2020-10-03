@@ -1,0 +1,24 @@
+@include media(mobile-only) {
+  .nav__header {
+    padding: 0 1.5em;
+  }
+
+  .nav {
+    padding: 8em 1.5em 0;
+
+    &__links {
+      height: 50%;
+      padding-top: 3em;
+    }
+
+    &__links--item {
+      a {
+        width: 100%;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+}

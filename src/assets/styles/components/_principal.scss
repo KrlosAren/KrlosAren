@@ -1,0 +1,250 @@
+main {
+  height: auto;
+  width: 100vw;
+}
+
+.content {
+  @include mixin-content;
+
+  margin-bottom: 3em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10em;
+  position: relative;
+}
+
+.handHello {
+  margin: 0 0.2em;
+}
+
+.content__text {
+  @include mixin-center-content;
+
+  border-bottom: 3px solid black;
+  justify-content: flex-start;
+  width: 60%;
+
+  span {
+    align-items: center;
+    display: flex;
+    font-family: $font-robotoslab;
+    font-size: $font-32 * 4;
+  }
+
+  h2 {
+    font-size: $font-32 * 2;
+  }
+}
+
+.dontClick {
+  @include mixin-center-content;
+
+  background-color: rgba(0, 128, 128, 0.589);
+  justify-content: flex-start;
+  margin-top: 0.3em;
+  text-align: right;
+  text-transform: uppercase;
+  width: 60%;
+
+  &__text {
+    color: transparent;
+    margin-right: 20px;
+    padding: 0.2em;
+    width: 100%;
+
+    &:hover {
+      color: unset;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &::before {
+        color: #16213e;
+        content: 'No me presiones!';
+        font-weight: $font-600;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.content__arrow {
+  align-items: flex-end;
+  bottom: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 0;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  position: fixed;
+  right: 0;
+
+  h3 {
+    display: flex;
+    flex-direction: column;
+    font-size: $font-32;
+    margin-bottom: 0.5em;
+    position: fixed;
+
+    &::before {
+      content: 'Baja';
+      font-size: $font-16;
+    }
+  }
+}
+
+// ------------- prologe -------------
+
+.prologe {
+  @include mixin-content;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 200px);
+  height: auto;
+  justify-items: center;
+  margin: 0 auto;
+  margin-left: auto;
+
+  &__text {
+    align-items: center;
+    display: flex;
+    grid-column: 1/-1;
+    grid-row: 1/2;
+    height: 100%;
+    width: 100%;
+
+    h2 {
+      border-bottom: 3px solid black;
+      font-family: $font-robotoslab;
+      font-size: $font-20 * 4;
+      width: 80%;
+    }
+  }
+
+  &__paragraph--what,
+  &__paragraph--continue,
+  &__paragraph--last {
+    @include mixin-paragraph;
+    @include mixin-center-content;
+
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+
+    b {
+      border-bottom: 2px solid #ff5874;
+      color: teal;
+    }
+
+    h3 {
+      color: #16213e;
+      font-size: $font-20;
+      font-weight: $font-600;
+    }
+
+    code {
+      color: #ff5874;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: $font-16;
+      padding: 0.5em;
+    }
+
+    p {
+      line-height: 1.6em;
+      margin: 1em 0;
+    }
+
+    del {
+      font-size: $font-16 - 3;
+    }
+  }
+
+  &__paragraph--what {
+    grid-column: 2/-1;
+    grid-row: 2/3;
+  }
+
+  &__paragraph--continue {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  &__paragraph--last {
+    grid-column: 2/-1;
+    grid-row: 4/-1;
+  }
+}
+
+// ------------- me -------------
+
+.me {
+  @include mixin-content;
+
+  align-items: center;
+  height: auto;
+  justify-content: center;
+  margin-bottom: 2em;
+  margin-left: auto;
+  margin-right: auto;
+
+  &__img {
+    @include mixin-center-content;
+
+    height: auto;
+
+    img {
+      height: 200px;
+      width: 200px;
+    }
+  }
+
+  &__description {
+    @include mixin-center-content;
+
+    flex-direction: column;
+
+    h2 {
+      border-bottom: 3px solid black;
+      font-family: $font-robotoslab;
+      font-size: $font-32 * 2;
+      margin: 0.5em 0;
+      text-align: center;
+      width: 60%;
+    }
+
+    b {
+      border-bottom: 2px solid #ff5874;
+      color: teal;
+    }
+
+    del {
+      font-size: $font-16 - 3;
+    }
+
+    ul {
+      line-height: 1.8em;
+      list-style: none;
+      text-align: center;
+
+      li {
+        font-size: $font-16 + 2;
+        font-weight: $font-300;
+        line-height: 1.6em;
+      }
+    }
+  }
+
+  &__buttons {
+    @include mixin-center-content;
+
+    margin: 0 auto;
+    width: 100%;
+
+    a {
+      height: 4em;
+      width: 25%;
+    }
+  }
+}

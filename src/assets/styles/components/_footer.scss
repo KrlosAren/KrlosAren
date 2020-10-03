@@ -1,0 +1,13 @@
+// ------------- footer -------------
+
+.footer {
+  @include mixin-center-content;
+
+  margin-top: 2em;
+
+  p {
+    a {
+      text-decoration: none;
+    }
+  }
+}

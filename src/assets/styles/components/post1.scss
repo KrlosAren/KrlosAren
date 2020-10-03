@@ -1,0 +1,24 @@
+.post__content {
+  margin: 0 auto;
+  width: 60%;
+
+  h3 {
+    margin: 1em 0;
+    width: auto;
+  }
+
+  p {
+    line-height: 1.8em;
+    margin: 1em 0;
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+  }
+
+  a {
+    border-bottom: 2px solid #ff5874;
+    color: teal;
+  }
+}

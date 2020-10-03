@@ -1,0 +1,37 @@
+.container__nav {
+  height: 0;
+  z-index: 1000;
+}
+
+.nav__header {
+  @include mixin-center-content;
+
+  height: 5em;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 7em;
+  position: fixed;
+  // position: absolute;
+  top: 4em;
+  width: 100%;
+  z-index: 1000;
+
+  img {
+    height: 80px;
+    width: 80px;
+  }
+
+  button {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0.5em;
+    color: #16213e;
+    outline: none;
+    padding: 0.5em 2em;
+
+    &:hover {
+      border: 1px dashed #16213e;
+      cursor: pointer;
+    }
+  }
+}

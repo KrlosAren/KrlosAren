@@ -1,0 +1,13 @@
+mixin blog_card(title, content, next)
+  .blog__card
+    h4=title
+    p=content
+    p=next
+    a(href="/post1.html") ...Continuar
+
+mixin project_card(url, title, img)
+  .project
+    a(href=url target='_blank')
+      .project__modal
+        h4=title
+      img(src=require('../../src/assets/images/'+img).default, alt=title)

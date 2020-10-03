@@ -1,0 +1,33 @@
+
+//  --------------------- typographic ---------------------
+
+$font-nunito: 'Nunito Sans', sans-serif;
+$font-robotoslab: 'Roboto Slab', serif;
+
+$font-300: 300;
+$font-600: 600;
+$font-700: 700;
+
+$font-16: 16px;
+$font-20: 20px;
+$font-24: 24px;
+$font-28: 28px;
+$font-32: 32px;
+
+//  --------------------- mixin  ---------------------
+
+@mixin mixin-content($height : 100vh) {
+  height: $height;
+  width: calc(100% - 80px);
+}
+
+@mixin mixin-paragraph {
+  height: 250px;
+  width: 100%;
+}
+
+@mixin mixin-center-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

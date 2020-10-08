@@ -145,4 +145,12 @@
       width: 100%;
     }
   }
+
+  .categories__container {
+    grid-template-columns: auto;
+  }
+
+  .categories__title {
+    font-size: $font-16;
+  }
 }

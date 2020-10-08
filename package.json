@@ -4,8 +4,8 @@
   "description": "**Frontend Developer and Designer**",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server --config ./webpack.config.local.js --mode development",
-    "local": "webpack-dev-server --config ./webpack.config.local.js --mode development --host 192.168.0.7",
+    "start": "webpack-dev-server --config ./webpack.local.js --mode development",
+    "local": "webpack-dev-server --config ./webpack.local.js --mode development --host 192.168.0.7",
     "build:prod": "webpack --config ./webpack.config.js --mode production"
   },
   "author": "Carlos Lopez Z. <krlosaren@gmail.com>",

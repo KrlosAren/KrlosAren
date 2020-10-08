@@ -45,9 +45,20 @@
         padding: 0.5em;
       }
     }
-  }
 
-  a {
-    text-decoration: none;
+    a {
+      border: 2px dashed transparent;
+      border-bottom: 2px dashed #16213e;
+      color: teal;
+      font-weight: 600;
+      padding: 0.2em;
+      text-decoration: none;
+      transition: 0.2s;
+
+      &:hover {
+        border: 2px dashed #16213e;
+        padding: 0.2em;
+      }
+    }
   }
 }

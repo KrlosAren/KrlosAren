@@ -4,3 +4,33 @@
   grid-template-columns: repeat(4, auto);
   width: 100%;
 }
+
+.categories {
+  h3 {
+    @include mixin-center-content;
+
+    border-bottom: transparent;
+    color: #16213e;
+    font-family: $font-nunito;
+    font-size: $font-28;
+    height: 2em;
+    justify-content: left;
+    width: 100%;
+
+    &::before {
+      align-content: center;
+      content: '👉🏻';
+      font-size: $font-16;
+      padding: 0.5em;
+    }
+  }
+
+  h4 {
+    &::before {
+      align-content: center;
+      content: '👉🏻';
+      font-size: $font-16;
+      padding: 0.5em;
+    }
+  }
+}

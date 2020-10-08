@@ -32,11 +32,23 @@ const Projects = () => {
         <h3>Proyectos</h3>
         <div className='main__projects'>
           <Categories title='Code' page='code'>
-            {projects.map((project) => (<Project key={project.id} project={project} />))}
+            {projects.map((project) => (
+              <Project
+                key={project.id}
+                url={project.url}
+                title={project.title}
+                img={project.img}
+              />
+            ))}
           </Categories>
-          <Categories title='Design' page='design'>
+          <Categories title='Design - Daily UI' page='design'>
             {data.map(((dribbble) => (
-              <Project key={dribbble.id} project={dribbble} />
+              <Project
+                key={dribbble.id}
+                url={dribbble.html_url}
+                title={dribbble.title}
+                img={dribbble.images.hidpi}
+              />
             )))}
           </Categories>
         </div>

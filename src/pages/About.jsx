@@ -19,18 +19,18 @@ const About = () => {
             <br />
             A veces soy
             {' '}
-            <Link to='/projects#architecture'>
-              <b>Arquitecto</b>
+            <Link to='projects#architecture'>
+              Arquitecto
             </Link>
             , otras
             {' '}
-            <Link to='/projects#code'>
-              <b>Programador</b>
+            <Link to='projects#code'>
+              Programador
             </Link>
             , algunas veces
             {' '}
-            <Link to='/projects#design'>
-              <b>Diseñador</b>
+            <Link to='projects#design'>
+              Diseñador
             </Link>
             .
             Pero siempre un 🎒viajero. Al final del dia mi mejor respuesta siempre es
@@ -64,9 +64,7 @@ const About = () => {
             {' '}
             profesionalmente,
             Me defino como 🎨💻
-            <Link to='/projects'>
-              <b className='linkDecoration'>Programador y Diseñador</b>
-            </Link>
+            <b className='linkDecoration'>Programador y Diseñador</b>
             , pero tambien soy
             {' '}
             <b>Arquitecto</b>

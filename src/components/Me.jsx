@@ -87,7 +87,7 @@ const Me = ({ avatar }) => {
         </ul>
       </div>
       <div className='me__buttons' id='buttons'>
-        <NavLink className='button-primary button btnActive' to='/about'>¿Quién es Carlos?</NavLink>
+        <NavLink className='button-primary button btnActive' to='/about'>Yo</NavLink>
         <NavLink className='button button-primary btnActive' to='/projects'>Proyectos</NavLink>
       </div>
     </div>

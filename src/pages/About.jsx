@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   const avatar = 'https://storage.googleapis.com/krlosaren-portafolio/images/avatar_carlos.svg';
@@ -7,7 +8,7 @@ const About = () => {
     <div id='main__container'>
 
       <main className='main main__about'>
-        <h3>Quién es Carlos</h3>
+        <h3>¿Quién es Carlos?</h3>
         <div className='main__text'>
           <p>
             Quién es
@@ -18,13 +19,19 @@ const About = () => {
             <br />
             A veces soy
             {' '}
-            <b>Arquitecto</b>
+            <Link to='/projects#architecture'>
+              <b>Arquitecto</b>
+            </Link>
             , otras
             {' '}
-            <b>Programador</b>
+            <Link to='/projects#code'>
+              <b>Programador</b>
+            </Link>
             , algunas veces
             {' '}
-            <b>Diseñador</b>
+            <Link to='/projects#design'>
+              <b>Diseñador</b>
+            </Link>
             .
             Pero siempre un 🎒viajero. Al final del dia mi mejor respuesta siempre es
             {' '}
@@ -57,7 +64,9 @@ const About = () => {
             {' '}
             profesionalmente,
             Me defino como 🎨💻
-            <b>Programador y Diseñador</b>
+            <Link to='/projects'>
+              <b className='linkDecoration'>Programador y Diseñador</b>
+            </Link>
             , pero tambien soy
             {' '}
             <b>Arquitecto</b>
@@ -93,19 +102,21 @@ const About = () => {
             , aportar mis
             {' '}
             <b>ideas</b>
-            y contribuir con la creación de
+            y contribuir con la creación de ser parte de un
             {' '}
-            <b>productos digitales fantásticos.</b>
+            <b>equipo de alto impacto.</b>
           </p>
           <br />
           <p>
             Puedo aportar tanto en
             {' '}
-            <b>Diseño</b>
+            <Link to='design'>
+              <b className='linkDecoration'>Diseño</b>
+            </Link>
             {' '}
             como en
             {' '}
-            <b>Programacion</b>
+            <b className='linkDecoration'>Programación</b>
             .
             Me gusta que las cosas salgan bien, la 🤯
             <b>Organización</b>

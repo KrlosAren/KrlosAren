@@ -18,3 +18,15 @@
 .hidden {
   display: none;
 }
+
+.emoji {
+  @include mixin-emoji(1em);
+}
+
+.linkDecoration {
+  transition: 0.2s;
+
+  &:hover {
+    border-bottom: transparent;
+  }
+}

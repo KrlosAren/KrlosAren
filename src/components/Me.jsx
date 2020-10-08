@@ -8,7 +8,7 @@ const Me = ({ avatar }) => {
       <div className='me__description'>
         <h2>
           Soy, Carlos
-          <span role='img' aria-label='face-smiley'>😁</span>
+          <span role='img' aria-label='face-smiley' className='emoji'>😁</span>
         </h2>
         <ul>
           <li>
@@ -87,7 +87,7 @@ const Me = ({ avatar }) => {
         </ul>
       </div>
       <div className='me__buttons' id='buttons'>
-        <NavLink className='button-primary button btnActive' to='/about'>Quién es Carlos</NavLink>
+        <NavLink className='button-primary button btnActive' to='/about'>¿Quién es Carlos?</NavLink>
         <NavLink className='button button-primary btnActive' to='/projects'>Proyectos</NavLink>
       </div>
     </div>

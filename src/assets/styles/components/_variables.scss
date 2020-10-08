@@ -31,3 +31,7 @@ $font-32: 32px;
   display: flex;
   justify-content: center;
 }
+
+@mixin mixin-emoji($size : 2em) {
+  font-size: $size;
+}

@@ -7,7 +7,6 @@ const menu = () => {
   mainContainer.classList.toggle('hidden');
   menuContainer.classList.toggle('hiddenMenu');
   footerContainer.classList.toggle('hidden');
-
 };
 
 export default menu;

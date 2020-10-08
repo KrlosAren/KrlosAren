@@ -4,10 +4,10 @@ const Prologe = () => {
   return (
     <div className='prologe'>
       <div className='prologe__text'>
-        <h2>Sigues Aquí!</h2>
+        <h2>!Sigues Aquí!</h2>
       </div>
       <div className='prologe__paragraph--what text__animation'>
-        <h3>Qué es esto?</h3>
+        <h3>¿Qué es esto?</h3>
         <p>
           Este espacio es mi bitácora de viaje.
           <b>Que viaje?.</b>
@@ -19,7 +19,7 @@ const Prologe = () => {
         </p>
       </div>
       <div className='prologe__paragraph--continue text__animation'>
-        <h3>Qué conseguirás?</h3>
+        <h3>¿Qué conseguirás?</h3>
         <p>
           En este espacio veras como comencé.
           <br />
@@ -34,7 +34,7 @@ const Prologe = () => {
         </p>
       </div>
       <div className='prologe__paragraph--last text__animation'>
-        <h3>Qué quiero?</h3>
+        <h3>¿Qué quiero?</h3>
         <p>
           Compartir lo que he aprendido.
           <br />

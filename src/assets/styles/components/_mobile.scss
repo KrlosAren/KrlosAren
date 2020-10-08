@@ -132,6 +132,8 @@
 
   .nav {
     &__header {
+      background-color: rgba($color: #fff, $alpha: 0.5);
+
       p {
         border: 1px dashed #16213e;
       }

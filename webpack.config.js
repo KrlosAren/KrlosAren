@@ -11,6 +11,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'js/[name].[hash].js',
+    publicPath: '/',
   },
   resolve: {
     extensions: ['.js', '.jsx'],
@@ -87,7 +88,7 @@ module.exports = {
       filename: 'assets/[name].[hash].css',
     }),
     new CleanWebpackPlugin({
-      cleanOnceBeforeBuildPatterns: ['**/app.*', '**/commons.*'],
+      cleanOnceBeforeBuildPatterns: ['**/app.*.js', '**/commons.*.js'],
     }),
     new StylelintPlugin({
       configFile: '.stylelintrc.json',

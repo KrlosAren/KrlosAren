@@ -17,11 +17,13 @@ const App = () => {
   const [load, setLoad] = useState({ loading: true });
 
   useEffect(() => {
-    // if (document.readyState === 'complete') setLoad({ loading: false });
-
-    window.addEventListener('load', () => {
+    const loadPage = () => {
       if (document.readyState === 'complete') setLoad({ loading: false });
-    });
+    };
+
+    loadPage();
+
+    window.addEventListener('load', loadPage);
   }, []);
 
   if (load.loading) {

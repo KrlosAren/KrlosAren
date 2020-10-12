@@ -2,9 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import App from './routes/App';
+
 import './assets/styles/main.scss';
 
-import App from './containers/App';
-
-ReactDOM.render(<App />, document.getElementById('app'));
+ReactDOM.render(
+  <App />,
+  document.getElementById('app'),
+);
 

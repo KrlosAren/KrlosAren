@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import menu from '../utils/menu';
 
 const Navbar = ({ avatar }) => {
+
   return (
     <div className='nav__header' id='navigator'>
       <span>

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.local.js --mode development",
     "local": "webpack-dev-server --config ./webpack.local.js --mode development --host 192.168.0.7",
-    "build:prod": "webpack --config ./webpack.config.js --mode production"
+    "build": "webpack --config ./webpack.config.js --mode production"
   },
   "author": "Carlos Lopez Z. <krlosaren@gmail.com>",
   "license": "MIT",

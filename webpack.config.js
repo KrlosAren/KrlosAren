@@ -3,6 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const StylelintPlugin = require('stylelint-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -79,6 +80,13 @@ module.exports = {
     ],
   },
   plugins: [
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: 'public/manifest.json', to: '' },
+        { from: './src/assets/images/favicon.svg', to: 'assets' },
+        { from: './src/assets/images/illus.svg', to: 'assets' },
+      ],
+    }),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, './public/index.pug'),
       filename: 'index.html',

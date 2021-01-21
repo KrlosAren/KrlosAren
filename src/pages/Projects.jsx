@@ -61,13 +61,16 @@ const Projects = () => {
               {projects.map((project) => (
                 <Project
                   key={project.id}
-                  url={project.url}
+                  demoUrl={project.demoUrl}
+                  repoUrl={project.repoUrl}
                   title={project.title}
                   img={project.img}
+                  description={project.description}
+                  status={project.status}
                 />
               ))}
             </Categories>
-            <Categories title='Design - Daily UI' page='design'>
+            {/* <Categories title='Design - Daily UI' page='design'>
               {data.map(((dribbble) => (
                 <Project
                   key={dribbble.id}
@@ -76,7 +79,7 @@ const Projects = () => {
                   img={dribbble.images.hidpi}
                 />
               )))}
-            </Categories>
+            </Categories> */}
           </div>
         </main>
       </div>

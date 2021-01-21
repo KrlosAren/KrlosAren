@@ -115,7 +115,7 @@
   }
 
   .project {
-    height: 300px;
+    // height: 300px;
     margin-bottom: unset;
     width: 100%;
 
@@ -145,6 +145,7 @@
   }
 
   .categories__container {
+    gap: 3em;
     grid-template-columns: auto;
   }
 

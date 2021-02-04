@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "id": 0,
+      "title": "Urban Eatery",
+      "demoUrl": "https://guru-hotel-c7cb6.web.app/",
+      "repoUrl": "https://github.com/KrlosAren/guruHotel-yelp",
+      "img": "https://storage.googleapis.com/krlosaren-portafolio/images/guru-hotel-c7cb6.web.app_.png",
+      "description": "Urban Eatery is an app to search about restaurants in the city.\n Look for reviews , photos about the local, schedules and prices.",
+      "status": true
+    },
+    {
       "id": 1,
       "title": "Suculentagram",
       "demoUrl": "https://krlosaren.github.io/suculentagram-v2/",
